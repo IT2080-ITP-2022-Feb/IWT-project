@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>DSK Book Store</title>
-		<link rel="stylesheet" href="./css/header.css">
+		<link rel="stylesheet" href="../css/header.css">
 	</head>
 
 	<body>
@@ -26,4 +26,6 @@
 			<li> <a href="contact us page">Contact Us</a></li>
 			<li> <a href="about us page">About Us</a></li>
 		</ul>
-	
+
+
+		<script src="../js/header.js"></script>
