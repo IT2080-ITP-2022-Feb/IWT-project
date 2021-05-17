@@ -13,18 +13,21 @@
 		<input type="button" value="Sign In " width="100px" hight="20px"><br/>
 		</div></li>
 		<hr>
-		<!-- <style="position:absolute !important; right:12px !important;" class="menu"> -->
-		<div class="topnav">
-                <input type="text" name="search" placeholder="Search books........"/>
-            </div>
+		
+
+
+
+
 		<ul>
 			<li> <a href="./index.php">Home</a></li>
-			<li> <a href="./about.php">About</a></li>
 			<li> <a href="books page">Books</a></li>
 			<li> <a href="Payment & Delivery page">Payment & Delivery page</a></li>
 			<li> <a href="contact us page">Contact Us</a></li>
-			<li> <a href="about us page">About Us</a></li>
+			<li> <a href="./about.php">About</a></li>
+			<li><input type="text" name="search" placeholder="Search.."/></li>
 		</ul>
+
+<hr>
 
 
 		<script src="../js/header.js"></script>
