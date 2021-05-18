@@ -6,11 +6,19 @@
   <tr>
     <td><img src="images/logo1.png" align="left" width="100px" hight="50px" alt="DSK book store logo">
 		<h1>DSK Book Store</h1><br><br><br>
-        <p>DSK.LK is a website for an extensive collection of books.Book lovers but also an interactive and innovative destination to make it exciting to discover and shop for new books online.</p></td>
-    <td {
-  text-align: top;
-}>
-    <h3>Quick Link</h3><br><br>
+        <p>DSK.LK is a website for an extensive collection of books.Book lovers but also an interactive and innovative destination to make it exciting to discover and shop for new books online.</p>
+        
+<a href="https://www.facebook.com/blossom/"> <img id="img1" src="images/fb.jpg"  width ="20px" ></a>&nbsp;&nbsp;&nbsp;
+<a href="https://www.instagram.com/blossom/"> <img id="img1" src="images/inster.jpg" width ="20px"></a>&nbsp;&nbsp;&nbsp;
+<a href="https://www.twwiter.com/"><img id="img1" src="images/twitter.jpg" width ="20px" ></a>&nbsp;&nbsp;&nbsp;
+<a href="https://www.whatsapp.com/blossom/"><img id="img1" src="images/whap.jfif" width ="20px"></a>
+
+</div>
+
+
+        </td>
+    <td>
+    <h3>Quick Link</h3><br>
         <ul>
 			<li> <a href="./index.php">Home</a></li>
 			<li> <a href="books page">Books</a></li>
