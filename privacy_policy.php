@@ -1,18 +1,13 @@
 <?php
-	include "../includes/header.php";
+  $title = 'Privacy Policy'; include("header.php");
 ?>
+
 
 <link rel="stylesheet" href="../css/about.css">
 
-
-
-
-
-<head>
 <title> Privacy Policy</title>
 
-</head>
-<body>
+
 
 <h1 align="center">Privacy Policy<h1>
 <h4>Our Privacy Policy explain what personal information we collect about
@@ -43,10 +38,12 @@
    last update in March 2021</p>
 
 
-</body>
+
 
 <script src="../js/about.js"></script>
+
+
 <?php
-	include "../includes/footer.php";
+	include "./footer.php";
 ?>
 

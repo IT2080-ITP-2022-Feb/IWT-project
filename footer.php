@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="../css/header.css">
 
 <footer>
-<table border="1" style="width:100%" >
+<table class="table-clz" border="1">
  
   <tr>
     <td><img src="images/logo1.png" align="left" width="100px" hight="50px" alt="DSK book store logo">

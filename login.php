@@ -1,12 +1,12 @@
 <?php
-	include "../includes/header.php";
+  $title = 'Login'; include("header.php");
 ?>
-<link rel="stylesheet" href="../css/about.css">
-<head>
 
-    <title>Login page</title>
-</head>
-<body >
+
+<link rel="stylesheet" href="../css/about.css">
+
+<title>Login page</title>
+
 
 <div align="center"style="width:800px;text-align:center;height:700px;border:1px solid black;">
 
@@ -34,9 +34,10 @@
 </div>
  <!--footer-->
 
-</body>
+
 
 <script src="../js/about.js"></script>
+
 <?php
-	include "../includes/footer.php";
+	include "./footer.php";
 ?>
