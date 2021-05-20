@@ -12,6 +12,9 @@
 		<link rel="stylesheet" href="../css/header.css">
 	</head>
 
+
+
+
 	<body>
 		<img src="images/logo1.png" align="left" width="100px" hight="50px" alt="DSK book store logo">
 		<h1 style="align:center">DSK Book Store</h1>
@@ -40,6 +43,10 @@
 			<li> <a href="./about.php">About</a></li>
 		</ul>
 
-<hr>
+	<hr>
 
+
+
+
+	
 <script src="../js/header.js"></script>
