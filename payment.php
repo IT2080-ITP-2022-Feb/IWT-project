@@ -7,7 +7,7 @@
 
 <!-- Type your Code here -->
 <h1>Payment Page</h1>
-
+<h2> diki 2422</h2>
 
 
 <script src="./js/payment.js"></script>
