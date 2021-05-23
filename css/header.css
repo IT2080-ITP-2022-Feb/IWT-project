@@ -80,7 +80,31 @@ body {
         position:relative;
         top:1px;
     }
-    
+
+
+    .nav__search input {
+        /* border-radius: 4px; */
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid #ebebeb;
+        height: 25px;
+        /* width: 300px; */
+        float: left;
+    }
+  
+    .nav__search input:focus {
+      outline: none;
+      border-bottom-color: #08e900;
+    }
+  
+    .nav__search button {
+        border-radius: 4px;
+        border: none;
+        background-color: white;
+        height: 15px;
+        width: 15px;
+        cursor: pointer;
+    }
 
 .nav__lower{
     background-color: rgb(177, 177, 177);
