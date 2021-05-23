@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
 * {
     box-sizing: border-box
 }
@@ -41,6 +43,7 @@ body {
         flex-direction: row;
         justify-content: center;
         margin: auto;
+        font-family: 'Pattaya', sans-serif;
     }
 
     .nav__search {

@@ -44,6 +44,7 @@
 			<li> <a href="./index.php">Home</a></li>
 			<li> <a href="./books.php">Books</a></li>
 			<li> <a href="./payment.php">Payment & Delivery page</a></li>
+			<li> <a href="./cart.php">Cart</a></li>
 			<li> <a href="./contactus.php">Contact Us</a></li>
 			<li> <a href="./about.php">About</a></li>
 		</ul>
