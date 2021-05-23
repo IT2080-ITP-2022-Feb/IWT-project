@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
 			<?php
 				if(isset($title)) {
 					echo "DSK - ";
 					echo $title;
 				}
 			?>
-		</title>
-		<link rel="stylesheet" href="../css/header.css">
-	</head>
+	</title>
+	<link rel="stylesheet" href="../css/header.css">
+</head>
+<body>
+
+<div class="wrapper">
 
 
 
-
-	<body>
 		<img src="images/logo1.png" align="left" width="100px" hight="50px" alt="DSK book store logo">
 		<h1 style="align:center">DSK Book Store</h1>
 
