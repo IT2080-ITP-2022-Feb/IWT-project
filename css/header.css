@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin:0
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;  
+}
+
+.nav__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    z-index: 99999;
+}
+
+.nav__upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+    .nav__logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 5px;
+        margin: auto;
+    }
+
+    .nav__title {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .nav__search {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .nav__buttons {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+
+    .nav__buttons a {
+        padding: 5px;
+    }
+
+    .btn {
+        background-color:#44c767;
+        border-radius:28px;
+        border:1px solid #18ab29;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:17px;
+        padding:7px 15px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #2f6627;
+    }
+    .btn:hover {
+        background-color:#5cbf2a;
+    }
+    .btn:active {
+        position:relative;
+        top:1px;
+    }
+    
+
+.nav__lower{
+    background-color: rgb(177, 177, 177);
+}
+
+.nav__lower ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+}
+  
+.nav__lower ul li a{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    padding: 0px 20px 0px;
+    text-decoration: none;
+    font-size: large;
+    color: black;
+}
+
+.nav__lower ul li:hover{
+    transform: scale(1.2);
+    transition-duration: .5s;
+}
+  
+.links {
+    list-style: none;
+}
+
+.wrapper {
+    margin-top: 180px;
+}

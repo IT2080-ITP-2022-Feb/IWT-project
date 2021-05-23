@@ -12,15 +12,51 @@
 				}
 			?>
 	</title>
-	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="./css/header.css">
 </head>
 <body>
+
+<nav class="nav__container sticky">
+	<div class="nav__upper">
+		<div class="nav__logo">
+			<a href="./index.php"><img src="images/logo1.png" align="left" width="100px" hight="50px" alt="DSK book store logo"></a>
+		</div>
+
+		<div class="nav__title">
+			<h1 style="align:center">DSK Book Store</h1>
+		</div>
+
+		<div class="nav__search">
+			<form action="./searchResultPage.php" method="get">
+				<input type="text" name="search" placeholder="Search.."/>
+				<button type="submit" name="submit">Search</button>
+			</form>
+		</div>
+
+		<div class="nav__buttons">
+			<a href="./login.php"><button class="btn">Login</button></a>
+			<a href="./signup.php"><button class="btn">Sign Up</button></a>
+		</div>
+	</div>
+	
+	<div class="nav__lower">
+		<ul class="links">
+			<li> <a href="./index.php">Home</a></li>
+			<li> <a href="./books.php">Books</a></li>
+			<li> <a href="./payment.php">Payment & Delivery page</a></li>
+			<li> <a href="./contactus.php">Contact Us</a></li>
+			<li> <a href="./about.php">About</a></li>
+		</ul>
+	</div>
+
+	
+</nav>
 
 <div class="wrapper">
 
 
 
-		<img src="images/logo1.png" align="left" width="100px" hight="50px" alt="DSK book store logo">
+		<!-- <img src="images/logo1.png" align="left" width="100px" hight="50px" alt="DSK book store logo">
 		<h1 style="align:center">DSK Book Store</h1>
 
 		<div class="topnav" align="right">
@@ -41,13 +77,13 @@
 
 		<ul>
 			<li> <a href="./index.php">Home</a></li>
-			<li> <a href="books page">Books</a></li>
-			<li> <a href="Payment & Delivery page">Payment & Delivery page</a></li>
-			<li> <a href="contact us page">Contact Us</a></li>
+			<li> <a href="./books.php">Books</a></li>
+			<li> <a href="./payment.php">Payment & Delivery page</a></li>
+			<li> <a href="./contactus.php">Contact Us</a></li>
 			<li> <a href="./about.php">About</a></li>
 		</ul>
 
-	<hr>
+	<hr> -->
 
 
 
