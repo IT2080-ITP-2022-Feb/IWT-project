@@ -173,7 +173,7 @@ CREATE TABLE ContactUs(
 	message varchar(300) NOT NULL
 );
 INSERT INTO ContactUs
-	(name, email, mobile, mobile, message)
+	(name, email, mobile, message)
 VALUES
 	('Fname Lname', 'test@gmail.com', '0712345678', 'This is a message'),
 	('Fname Lname', 'test@gmail.com', '0712345678', 'This is a message'),
