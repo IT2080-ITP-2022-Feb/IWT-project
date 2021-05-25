@@ -86,15 +86,16 @@ CREATE TABLE Book(
 	Book_name varchar(35),
 	S_ID INT,
 	catID INT,
-	CONSTRAINT category_fk FOREIGN KEY (catID) REFERENCES Seller(catID) ON DELETE SET NULL,
-	CONSTRAINT sellerID_fk FOREIGN KEY (S_ID) REFERENCES Seller(S_ID) ON DELETE SET NULL
+	CONSTRAINT bookCategoryID_fk FOREIGN KEY (catID) REFERENCES Category(catID) ON DELETE SET NULL,
+	CONSTRAINT bookSellerID_fk FOREIGN KEY (S_ID) REFERENCES Seller(S_ID) ON DELETE SET NULL
 );
+
 INSERT INTO Book
-	(Author, Book_name, S_ID, CatID,)
+	(Author, Book_name, S_ID, CatID)
 VALUES
 	('Kiribathgoda Ghnananda', 'Sri sambundhathwaya' , 1, 1),
-	('A.D.K.Rupasinha' , 'Genaral Knowladge' , 2, 2),
-	('Umberto Eco ' , 'The Sea' , 3, 3),
+	('A.D.K.Rupasinha', 'Genaral Knowladge' , 2, 2),
+	('Umberto Eco' , 'The Sea' , 3, 3),
 	('Olga Tokarczuk' , 'Flights' , 4, 4),
 	('Tara Westover' , 'Educated' , 5, 5);
 
@@ -102,12 +103,12 @@ VALUES
 
 CREATE TABLE Cart(
 	C_ID INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
-	Quntity INT,
+	quantity INT,
 	Book_ID INT NOT NULL,
-	CONSTRAINT bookID_fk FOREIGN KEY (Book_ID) REFERENCES Book(Book_ID)
+	CONSTRAINT CartBookID_fk FOREIGN KEY (Book_ID) REFERENCES Book(Book_ID)
 );
-INSERT INTO Book
-	(Quntity, Book_ID)
+INSERT INTO Cart
+	(quantity, Book_ID)
 VALUES
 	(2, 1),
 	(1, 2),
@@ -127,9 +128,10 @@ CREATE TABLE Feedback(
 	Rate integer,
 	F_time time,
 	F_date date,
-	constraint Feedback_FK1 FOREIGN KEY (B_ID) REFERENCES Buyer(B_ID),
-	constraint Feedback_FK1 FOREIGN KEY (Book_ID) REFERENCES Book(Book_ID),
+	constraint feedBuyerID_fk FOREIGN KEY (B_ID) REFERENCES Buyer(B_ID),
+	constraint feedBookID_fk FOREIGN KEY (Book_ID) REFERENCES Book(Book_ID)
 );
+
 INSERT INTO Feedback
 	(B_ID, Book_ID, comment, Email, Rate, F_time, F_date)
 VALUES
@@ -151,17 +153,18 @@ CREATE TABLE Payment(
 	pymntDescription varchar(300),
 	P_time time,
 	P_date date,
-	constraint Feedback_FK1 FOREIGN KEY (B_ID) REFERENCES Buyer(B_ID),
-	constraint Feedback_FK1 FOREIGN KEY (Book_ID) REFERENCES Book(Book_ID),
+	constraint payBuyerID FOREIGN KEY (B_ID) REFERENCES Buyer(B_ID),
+	constraint payBookID FOREIGN KEY (Book_ID) REFERENCES Book(Book_ID)
 );
+
 INSERT INTO Payment
 	(B_ID, Book_ID, amount, pay_type, pymntDescription, P_time, P_date)
 VALUES
-	(1, 1, '700.00','cash on delivery',,'08:30:50','2021-01-01'),
-	(2, 2, '350.00','cash on delivery',,'14:30:00','2018-12-15'),
-	(3, 3, '1100.00','cash on delivery',,'16:43:40','2016-07-12'),
-	(4, 4, '580.00','cash on delivery',,'12:15:00','2015-03-14'),
-	(5, 5, '1000.00','cash on delivery',,'09:30:30','2015-01-23');
+	(1, 1, '700.00', 'cash on delivery', 'This is a payment Description', '08:30:50' ,'2021-01-01'),
+	(2, 2, '350.00', 'cash on delivery', 'This is a payment Description', '14:30:00' ,'2018-12-15'),
+	(3, 3, '1100.00', 'cash on delivery', 'This is a payment Description', '16:43:40' ,'2016-07-12'),
+	(4, 4, '580.00', 'cash on delivery', 'This is a payment Description', '12:15:00' ,'2015-03-14'),
+	(5, 5, '1000.00', 'cash on delivery', 'This is a payment Description', '09:30:30' ,'2015-01-23');
 
 
 
