@@ -22,15 +22,15 @@
       <h3>Quick Link</h3><br>
       <ul>
         <li> <a href="./index.php">Home</a></li>
-        <li> <a href="books page">Books</a></li>
-        <li> <a href="Payment & Delivery page">Payment & Delivery page</a></li>
-        <li> <a href="contact us page">Contact Us</a></li>
+        <li> <a href="./books.php">Books</a></li>
+        <li> <a href="./Payment_&_Delivery.php">Payment & Delivery page</a></li>
+        <li> <a href="./contactus.php">Contact Us</a></li>
         <li> <a href="./about.php">About Us</a></li>
-        <li> <a href="Feedback">Feedback</a></li>
-        <li> <a href="Terms & Condition">Terms & Condition</a></li>
-        <li> <a href="Privacy Policy">Privacy Policy</a></li>
-        <li> <a href="Sign up">Sign up</a></li>
-        <li> <a href="Sign in">Sign in</a></li>
+        <li> <a href="./Feedback.php">Feedback</a></li>
+        <li> <a href="./Terms&Condition.php">Terms & Condition</a></li>
+        <li> <a href="./Privacy_policy.php">Privacy Policy</a></li>
+        <li> <a href="./Signup.php">Sign up</a></li>
+        <li> <a href="./Signin.php">Sign in</a></li>
       </ul>
     </td>
 

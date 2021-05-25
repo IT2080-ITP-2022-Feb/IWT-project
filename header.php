@@ -34,7 +34,7 @@
 		</div>
 
 		<div class="nav__buttons">
-			<a href="./login.php"><button class="btn">Login</button></a>
+			<a href="./login.php"><button class="btn">Sign in</button></a>
 			<a href="./signup.php"><button class="btn">Sign Up</button></a>
 		</div>
 	</div>
