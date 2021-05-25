@@ -1,3 +1,12 @@
+<?php
+  include_once './src/dbConfig.php';
+
+//   This is temporary
+	session_start();
+	$_SESSION["id"] = "b0001";
+	$_SESSION["role"] = "buyer";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
