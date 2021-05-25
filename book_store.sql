@@ -9,6 +9,17 @@ CREATE TABLE Admin(
 	A_Password varchar(256) NOT NULL
 );
 
+
+INSERT INTO Admin
+	(a_fname, a_lname, a_username, a_imgLoc, role, a_password, a_email)
+VALUES
+	('Thushara', 'Thiwanka', 'thusharax', 'adminImage1.jpg', 'admin', SHA2('pass', 256), 'thushara@sliit.lk'),
+	('Gaween', 'Kanishka', 'gaween', 'adminImage2.jpg', 'admin', SHA2('pass', 256), 'gaween@sliit.lk'),
+	('Chamath', 'Jayasekara', 'chamath', 'adminImage3.jpg', 'admin', SHA2('pass', 256), 'chamath@sliit.lk'),
+	('Nikethani', 'Gangoda', 'nikethani', 'adminImage4.jpg', 'admin', SHA2('pass', 256), 'nikethani@sliit.lk'),
+	('Pamodya', 'Daundasekara', 'pamodya', 'adminImage5.jpg', 'admin', SHA2('pass', 256), 'pamodya@sliit.lk');
+
+
 CREATE TABLE Seller(
 	S_ID cINT AUTO_INCREMENT PRIMARY KEY NOT NULL,
 	F_name varchar(25),
