@@ -20,7 +20,7 @@
           <div class='book'>
             <h4>".$row['Book_name']."</h4>
             <img src='./Uploads/Books/". $row['Book_img'] ."' alt='' width='108px' heigth='172.75px'>
-            <a href='./cart.php?bookID=".$row['Book_ID']."'>Add to Cart</a>
+            <a href='./addToCart.php?Book_ID=".$row['Book_ID']."'>Add to Cart</a>
           </div>
           <hr>
           ";

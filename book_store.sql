@@ -106,16 +106,18 @@ CREATE TABLE Cart(
 	C_ID INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
 	quantity INT,
 	Book_ID INT NOT NULL,
-	CONSTRAINT CartBookID_fk FOREIGN KEY (Book_ID) REFERENCES Book(Book_ID)
+	B_ID INT,
+	CONSTRAINT CartBookID_fk FOREIGN KEY (Book_ID) REFERENCES Book(Book_ID),
+	CONSTRAINT CartB_ID_fk FOREIGN KEY (B_ID) REFERENCES Buyer(B_ID)
 );
 INSERT INTO Cart
-	(quantity, Book_ID)
+	(quantity, Book_ID, B_ID)
 VALUES
-	(2, 1),
-	(1, 2),
-	(1, 3),
-	(3, 4),
-	(4, 5);
+	(2, 1, 1),
+	(1, 2, 2),
+	(1, 3, 3),
+	(3, 4, 4),
+	(4, 5, 5);
 
 
 
