@@ -3,7 +3,7 @@
 
 //   This is temporary
 	session_start();
-	$_SESSION["id"] = "b0001";
+	$_SESSION["id"] = 1;
 	$_SESSION["role"] = "buyer";
 ?>
 
@@ -21,6 +21,7 @@
 				}
 			?>
 	</title>
+	<link rel="shortcut icon" type="png" href="./images/favicon/favicon.png"/>
 	<link rel="stylesheet" href="./css/header.css">
 </head>
 <body>
@@ -52,8 +53,16 @@
 		<ul class="links">
 			<li> <a href="./index.php">Home</a></li>
 			<li> <a href="./books.php">Books</a></li>
-			<li> <a href="./payment.php">Payment & Delivery page</a></li>
-			<li> <a href="./cart.php">Cart</a></li>
+
+			<?php
+				if($_SESSION['role'] === 'buyer') {
+					echo '
+						<li> <a href="./payment_&_delivery.php">Payment & Delivery page</a></li>
+						<li> <a href="./cart.php">Cart</a></li>'
+					;
+				}
+			?>
+
 			<li> <a href="./contactus.php">Contact Us</a></li>
 			<li> <a href="./about.php">About</a></li>
 		</ul>

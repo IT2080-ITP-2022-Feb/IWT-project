@@ -84,6 +84,7 @@ CREATE TABLE Book(
 	Book_ID INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
 	Author varchar(25),
 	Book_name varchar(35),
+	Book_img varchar(300),
 	S_ID INT,
 	catID INT,
 	CONSTRAINT bookCategoryID_fk FOREIGN KEY (catID) REFERENCES Category(catID) ON DELETE SET NULL,
@@ -91,13 +92,13 @@ CREATE TABLE Book(
 );
 
 INSERT INTO Book
-	(Author, Book_name, S_ID, CatID)
+	(Author, Book_name, Book_img, S_ID, CatID)
 VALUES
-	('Kiribathgoda Ghnananda', 'Sri sambundhathwaya' , 1, 1),
-	('A.D.K.Rupasinha', 'Genaral Knowladge' , 2, 2),
-	('Umberto Eco' , 'The Sea' , 3, 3),
-	('Olga Tokarczuk' , 'Flights' , 4, 4),
-	('Tara Westover' , 'Educated' , 5, 5);
+	('Kiribathgoda Ghnananda', 'Sri sambundhathwaya' , 'book1.jpg', 1, 1),
+	('A.D.K.Rupasinha', 'Genaral Knowladge' , 'book2.jpg', 2, 2),
+	('Umberto Eco' , 'The Sea' , 'book3.jpg', 3, 3),
+	('Olga Tokarczuk' , 'Flights' , 'book4.jpg', 4, 4),
+	('Tara Westover' , 'Educated' , 'book5.jpg', 5, 5);
 
 
 
