@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 26, 2021 at 02:52 AM
+-- Generation Time: May 26, 2021 at 07:19 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -112,19 +112,20 @@ INSERT INTO `buyer` (`B_ID`, `F_name`, `M_name`, `L_name`, `B_dob`, `B_email`, `
 CREATE TABLE `cart` (
   `C_ID` int(11) NOT NULL,
   `quantity` int(11) DEFAULT NULL,
-  `Book_ID` int(11) NOT NULL
+  `Book_ID` int(11) NOT NULL,
+  `B_ID` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `cart`
 --
 
-INSERT INTO `cart` (`C_ID`, `quantity`, `Book_ID`) VALUES
-(1, 2, 1),
-(2, 1, 2),
-(3, 1, 3),
-(4, 3, 4),
-(5, 4, 5);
+INSERT INTO `cart` (`C_ID`, `quantity`, `Book_ID`, `B_ID`) VALUES
+(2, 1, 2, 2),
+(3, 1, 3, 3),
+(4, 3, 4, 4),
+(5, 4, 5, 5),
+(13, 8, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -287,7 +288,8 @@ ALTER TABLE `buyer`
 --
 ALTER TABLE `cart`
   ADD PRIMARY KEY (`C_ID`),
-  ADD KEY `CartBookID_fk` (`Book_ID`);
+  ADD KEY `CartBookID_fk` (`Book_ID`),
+  ADD KEY `CartB_ID_fk` (`B_ID`);
 
 --
 -- Indexes for table `category`
@@ -349,7 +351,7 @@ ALTER TABLE `buyer`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `C_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `C_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `category`
@@ -396,6 +398,7 @@ ALTER TABLE `book`
 -- Constraints for table `cart`
 --
 ALTER TABLE `cart`
+  ADD CONSTRAINT `CartB_ID_fk` FOREIGN KEY (`B_ID`) REFERENCES `buyer` (`B_ID`),
   ADD CONSTRAINT `CartBookID_fk` FOREIGN KEY (`Book_ID`) REFERENCES `book` (`Book_ID`);
 
 --
