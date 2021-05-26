@@ -35,6 +35,10 @@
             flex-direction: row;
             justify-content: space-evenly;
         }
+        .admin__login a{
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+        }
     
 
     .footer__middle {

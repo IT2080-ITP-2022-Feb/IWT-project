@@ -24,6 +24,10 @@
         <a href="https://www.twwiter.com/"><img id="img1" src="images/twitter.jpg" width ="40px" ></a>&nbsp;&nbsp;&nbsp;
         <a href="https://www.whatsapp.com/blossom/"><img id="img1" src="images/whap.jfif" width ="40px"></a>
       </div>
+
+      <div class="admin__login">
+        <a href="./adminLogin.php">Admin Login</a>
+      </div>
     </div>
 
     <div class="footer__middle">
