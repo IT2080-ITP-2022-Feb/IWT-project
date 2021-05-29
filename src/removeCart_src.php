@@ -1,3 +1,5 @@
+<!-- Dilki -->
+
 <?php
     if(isset($_GET['C_ID'])) {
         $C_ID = $_GET['C_ID'];
