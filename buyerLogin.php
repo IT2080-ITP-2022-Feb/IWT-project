@@ -14,13 +14,13 @@
 
 <div class="include">
 		<center><h3>Sign in to your DSK Book Store Buyer Account</h3></center>
-			<form method="POST" action="login.php">
-				Email<br>
-				<input type="text" id="uName" name="uName" class="insert" placeholder="Enter your email address
+			<form method="POST" action="abc.php">
+				user name<br>
+				<input type="text" id="uName" name="uName" class="insert" placeholder="Enter your user name
 				" required><br><br>
 				Password<br>
-				<input type="password" id="showPass" name="showPass" class="insert" placeholder="Password" required pattern="[a-zA-Z0-9]{5,10}"><br><br>
-				<input type="checkbox"  onclick="myfunction()">
+				<input type="password" id="showPass" name="pass" class="insert" placeholder="Password" required pattern="[a-zA-Z0-9]{5,10}"><br><br>
+				<input type="checkbox"  onclick="">
 				show password &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
 				<br>
 				
@@ -29,11 +29,15 @@
 				<br>
 				<a style="float:left; color: #006699;">Don't have an account?</a>&nbsp;&nbsp;
 				
-                <a href="./signup.php">Sign up</a>
+                <a href="buyerLogin.php">Sign up</a>
 			
 			</form>
 	</div>
 </div>
+
+
+
+
 
 <script src="./js/buyerLogin.js"></script>
 <?php

@@ -3,7 +3,7 @@
 ?>
 
 
-<link rel="stylesheet" href="./css/Feedback.css">
+<link rel="stylesheet" href="css/feedback.css">
 
 
 <!-- Type your Code here -->
@@ -35,7 +35,9 @@
 	</div>
 
 
-<script src="./js/Feedback.js"></script>
+
+
+<script src="../js/Feedback.js"></script>
 
 <?php
 	include "./footer.php";

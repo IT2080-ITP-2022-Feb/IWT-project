@@ -1,6 +1,6 @@
 
 
-<link rel="stylesheet" href="./css/footer.css">
+<link rel="stylesheet" href="css/footer.css">
 
 <footer>
   <div class="footer__container">
@@ -134,7 +134,7 @@
 </footer> -->
 
 
-<script src="./js/footer.js"></script>
+<script src="js/footer.js"></script>
 </div>
 </body> 
 </html>
