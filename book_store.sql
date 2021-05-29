@@ -13,11 +13,11 @@ CREATE TABLE Admin(
 INSERT INTO Admin
 	( F_name, M_name, L_name, A_dob, A_email, user_type, A_password)
 VALUES
-	('Nadeesha', 'Dilshan', 'Wickramarathna', '1999-10-11', 'test@gmail.com', 'admin', 'test'),
-	('Dinushika', 'Sewwandi', 'Dodanthenna' ,'1999-07-01', 'test@gmail.com', 'admin', 'test'),
-	('Kavindu', 'Malshan', 'Madutharanga','1999-09-21', 'test@gmail.com', 'admin', 'test'),
-	('Sameesha', 'Rashani', 'Kulasekara', '1999-10-21', 'test@gmail.com', 'admin', 'test'),
-	('Dilki', 'Poornima', 'Welagedara','1999-12-18', 'test@gmail.com', 'admin', 'test');
+	('Nadeesha', 'Dilshan', 'Wickramarathna', '1999-10-11', 'Nadeesha@gmail.com', 'admin', 'test'),
+	('Dinushika', 'Sewwandi', 'Dodanthenna' ,'1999-07-01', 'Dinushika@gmail.com', 'admin', 'test'),
+	('Kavindu', 'Malshan', 'Madutharanga','1999-09-21', 'Kavindu@gmail.com', 'admin', 'test'),
+	('Sameesha', 'Rashani', 'Kulasekara', '1999-10-21', 'Sameesha@gmail.com', 'admin', 'test'),
+	('Dilki', 'Poornima', 'Welagedara','1999-12-18', 'Dilki@gmail.com', 'admin', 'test');
 
 
 CREATE TABLE Seller(
@@ -34,11 +34,11 @@ CREATE TABLE Seller(
 INSERT INTO Seller
 	(F_name, M_name, L_name, S_dob, S_email, user_type, S_password)
 VALUES
-	('Malsha','Ravihari','perera','1991-10-23', 'test@gmail.com', 'seller', 'test'),
-	('Rashmi','Senarathna','gamage' ,'1999-05-06', 'test@gmail.com', 'seller', 'test'),
-	('Kosala','Maduranga','withanage','1998-09-03', 'test@gmail.com', 'seller', 'test'),
-	('Dilsha','Lakshani','bandara','1997-02-01', 'test@gmail.com', 'seller', 'test'),
-	('Amandi','Pamudika','ekanayaka','1992-12-01', 'test@gmail.com', 'seller', 'test');
+	('Malsha','Ravihari','perera','1991-10-23', 'Malsha@gmail.com', 'seller', 'test'),
+	('Rashmi','Senarathna','gamage' ,'1999-05-06', 'Rashmi@gmail.com', 'seller', 'test'),
+	('Kosala','Maduranga','withanage','1998-09-03', 'Kosala@gmail.com', 'seller', 'test'),
+	('Dilsha','Lakshani','bandara','1997-02-01', 'Dilsha@gmail.com', 'seller', 'test'),
+	('Amandi','Pamudika','ekanayaka','1992-12-01', 'Amandi@gmail.com', 'seller', 'test');
 
 
 
@@ -56,11 +56,11 @@ CREATE TABLE Buyer(
 INSERT INTO Buyer
 	( F_name, M_name, L_name, B_dob, B_email, user_type, B_password)
 VALUES
-	('Suneth','Sampath','Perera','1993-10-15', 'test@gmail.com', 'buyer', 'test'),
-	('Gimhana','Senarathna','Silva','1997-12-01', 'test@gmail.com', 'buyer', 'test'),
-	('Kavindu','Maduranga','Eodanthanna','1995-06-18', 'test@gmail.com', 'buyer', 'test'),
-	('Sameesha','Rashini','Rathnayaka','1993-11-20', 'test@gmail.com', 'buyer', 'test'),
-	('Tharuka','Ekanayaka','Perera','1992-07-12', 'test@gmail.com', 'buyer', 'test');
+	('Suneth','Sampath','Perera','1993-10-15', 'Suneth@gmail.com', 'buyer', 'test'),
+	('Gimhana','Senarathna','Silva','1997-12-01', 'Gimhana@gmail.com', 'buyer', 'test'),
+	('Kavindu','Maduranga','Eodanthanna','1995-06-18', 'Kavindu@gmail.com', 'buyer', 'test'),
+	('Sameesha','Rashini','Rathnayaka','1993-11-20', 'Sameesha@gmail.com', 'buyer', 'test'),
+	('Tharuka','Ekanayaka','Perera','1992-07-12', 'Tharuka@gmail.com', 'buyer', 'test');
 
 
 CREATE TABLE Category(

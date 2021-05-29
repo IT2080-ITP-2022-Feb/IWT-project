@@ -7,7 +7,7 @@
 
 <title>Admin Login page</title>
 
-<form action="./src/adminLogin_src.php" method="post">
+<form action="./src/admin/adminLogin_src.php" method="post">
     <h4>Admin Email</h4>
     <input placeholder="Admin Email..." type="text" name="email">
     <h4>Password</h4>

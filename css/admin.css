@@ -1,0 +1,49 @@
+.counters {
+    margin-top: 55px;
+    /* background-color: rgb(240, 240, 240); */
+}
+    .stat__container {
+        /* background-color: tomato; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+        .stat__box {
+            width: 200px;
+            padding: 5px 5px;
+            border: 2px solid rgb(158, 158, 158);
+            border-radius: 5px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .stat__box h3 {
+            text-align: center;
+            color: rgb(128, 128, 128);
+        }
+        .stat__box h1 {
+            margin: 0px;
+            font-size: xx-large;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
