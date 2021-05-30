@@ -5,7 +5,9 @@
 
 <link rel="stylesheet" href="./css/signup.css">
 
-
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+</style>
 <!-- Type your Code here -->
 
 <?php
@@ -128,7 +130,6 @@ function strlenght($str){
 				alert ('Record Inserted Successfully...!');
 			</script>"
 	  }
-
 	  function SignUP(){
 		  $sql = "SELECT * FROM su WHERE urname = '$_POST["urname"]' AND email = '$_POST["email"]'";
 
@@ -142,29 +143,16 @@ function strlenght($str){
 		  alert ('You are already Sign Up User...!');
 		 </script>"
 	  }
-
 	  }
-
 	  if(isset($_POST["submit"])){
 		SignUP();
 		mysqli_close($GLOBALS["con"]);
 		$boolen = false;
 	  }
-
-
+	}
 }
-
-}
-
-
 
 ?>
-
-
-
-
-
-
 
  <form class="" enctype="multipart/form.data" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"method="post">
 
@@ -176,13 +164,10 @@ function strlenght($str){
 
 				 <h3> Sign Up</h3>
 
-
 				 <div class="content">
 					 <div class="txt">
 						 <input type="text" name="username" value="" id="txtuser" placeholder="Username">
 						 <span id="c1" class="glyphicon glyphicon-user"></span>
-
-
 			 </div>
 			 <span id="span"><?php echo $urerr; ?></span>
 
@@ -241,13 +226,9 @@ function strlenght($str){
 	   </div>
 
 	</div>
-
-
  </div>
 
-
 </form>
-
 
 <script>
 
@@ -258,7 +239,6 @@ var $txt1=$("txtuser");
 var $txt2=$("txtemail");
 var $txt3=$("txtpass");
 
-
 $("input").ready(function(){
 
 var id = document.activeElement.id;
@@ -267,7 +247,6 @@ if(id == "txtuser"){
 	$("#c1").css("color","green");
 	icon = "#c1";
 }
-
 
 if(id == "txtemail"){
 	$("#c2").css("color","green");
@@ -284,9 +263,7 @@ if(id == "txtcpass"){
 	icon = "#c4";
 }
 
-
 });
-
 
 $("input").blur(function(){
 
@@ -312,12 +289,6 @@ $("input").blur(function(){
 });
 
 });
-
-
-
-
-
-	
 
 
 <script src="./js/signup.js"></script>

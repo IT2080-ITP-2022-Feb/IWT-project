@@ -47,14 +47,22 @@ textarea {
   position: absolute;
 }
 
+<<<<<<< Updated upstream
 .big-circle.one {
+=======
+.circle.one {
+>>>>>>> Stashed changes
   width: 130px;
   height: 130px;
   top: 130px;
   right: -40px;
 }
 
+<<<<<<< Updated upstream
 .star.two {
+=======
+.circle.two {
+>>>>>>> Stashed changes
   width: 80px;
   height: 80px;
   top: 10px;

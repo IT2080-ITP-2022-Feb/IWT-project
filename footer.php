@@ -124,7 +124,7 @@
       <p>Online Support: +94 702 233 565</p>
       <p>Publication Inquiries: +94 703 335 335</p>
       <h4>E-mail:-</h4>
-      <p>info@dskboos.com</p>
+      <p>info@dskbooks.com</p>
       <p>admin@dskbooks.com</p>
     </td>
     
