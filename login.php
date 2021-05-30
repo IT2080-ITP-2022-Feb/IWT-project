@@ -3,7 +3,7 @@
 ?>
 
 
-<link rel="stylesheet" href="../css/about.css">
+<link rel="stylesheet" href="./css/about.css">
 
 <title>Login page</title>
 
@@ -16,7 +16,7 @@
 
 
 
-<script src="../js/about.js"></script>
+<script src="./js/about.js"></script>
 
 <?php
 	include "./footer.php";

@@ -3,8 +3,8 @@
 
 //   This is temporary
 	session_start();
-	$_SESSION["id"] = "b0001";
-	$_SESSION["role"] = "buyer";
+	// $_SESSION["id"] = 1;
+	// $_SESSION["role"] = "buyer";
 ?>
 
 <!DOCTYPE html>
@@ -21,6 +21,7 @@
 				}
 			?>
 	</title>
+	<link rel="shortcut icon" type="png" href="./images/favicon/favicon.png"/>
 	<link rel="stylesheet" href="./css/header.css">
 </head>
 <body>
@@ -41,19 +42,46 @@
 				<button type="submit" name="submit">Search</button>
 			</form>
 		</div>
-
+		
 		<div class="nav__buttons">
-			<a href="./login.php"><button class="btn">Sign in</button></a>
-			<a href="./signup.php"><button class="btn">Sign Up</button></a>
+		<?php
+			if (isset($_SESSION["id"])) {
+				if ($_SESSION["role"] === 'admin') {
+					echo '<a href="./admin.php"><button class="btn">Admin Dashboard</button></a>';
+				  }
+				  else if (($_SESSION["role"] === 'buyer')) {
+					echo '<a href="./buyerDashboard.php"><button class="btn">Dashboard</button></a>';
+				  }
+				  else if (($_SESSION["role"] === 'seller')) {
+					echo '<a href="./sellerDashboard.php"><button class="btn">Dashboard</button></a>';
+				  }
+				  echo '<a href="./src/logout_src.php"><button class="btn">Logout</button></a>';
+			}
+			else {
+				echo '<a href="./login.php"><button class="btn">Sign in</button></a>
+					<a href="./signup.php"><button class="btn">Sign Up</button></a>';
+			}
+		?>
 		</div>
+
 	</div>
 	
 	<div class="nav__lower">
 		<ul class="links">
 			<li> <a href="./index.php">Home</a></li>
 			<li> <a href="./books.php">Books</a></li>
-			<li> <a href="./payment.php">Payment & Delivery page</a></li>
-			<li> <a href="./cart.php">Cart</a></li>
+
+			<?php
+				if (isset($_SESSION["id"])) {
+					if($_SESSION['role'] === 'buyer') {
+						echo '
+							<li> <a href="./payment_&_delivery.php">Payment & Delivery page</a></li>
+							<li> <a href="./cart.php">Cart</a></li>'
+						;
+					}
+				}
+			?>
+
 			<li> <a href="./contactus.php">Contact Us</a></li>
 			<li> <a href="./about.php">About</a></li>
 		</ul>

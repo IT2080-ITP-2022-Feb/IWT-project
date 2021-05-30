@@ -1,3 +1,75 @@
-.table-clz {
+/* .table-clz {
     width: 100%;
+} */
+
+.footer__container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    z-index: 99999;
 }
+    .footer__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+        .fLeft__titleWithLogo {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+            .footer__logo {
+                
+            }
+            .footer__title {
+                font-size: xx-large;
+            }
+        .fLeft__description {
+            padding-left: 10px;
+        }
+        .fLeft__socialIcons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .admin__login a{
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+        }
+    
+
+    .footer__middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-style: solid;
+        border-color: rgb(177, 177, 177);;
+        border-top: rgb(177, 177, 177);
+        border-bottom: rgb(177, 177, 177);
+        padding: 0px 5px 0px;
+    }
+        .fMiddle__title {
+            
+        }
+        .fMiddle__links {
+            
+        }
+    
+    .footer__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0px 5px 0px;
+    }
+        .fRight__headOffice {
+
+        }
+        .fRight__contactInfo {
+
+        }
+        .fRight__emails {
+
+        }

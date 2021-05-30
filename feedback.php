@@ -3,7 +3,7 @@
 ?>
 
 
-<link rel="stylesheet" href="./css/Feedback.css">
+<link rel="stylesheet" href="./css/feedback.css">
 
 
 <!-- Type your Code here -->
@@ -33,6 +33,8 @@
 		
 	</div>
 	</div>
+
+
 
 
 <script src="./js/Feedback.js"></script>

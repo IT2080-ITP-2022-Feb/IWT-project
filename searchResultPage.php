@@ -9,8 +9,31 @@
 
 
 <!-- Type your Code here -->
-<h1>Search Result Page</h1>
 
+<?php
+
+	if (isset($_GET['submit'])) {
+		echo "<h1>Search Result for ". $_GET["search"] ."...</h1>";
+
+		$search = mysqli_real_escape_string($conn,$_GET['search']);
+
+		if($search === "") {
+			echo "<h3>All Books</h3><br>";
+		}
+	
+		$sql = "SELECT * FROM Book WHERE Book_name LIKE '%$search%'";
+		
+		$res = $conn->query($sql);
+	
+		if ($res->num_rows > 0) {
+			while ($row = $res->fetch_assoc()) {
+				echo ''. $row['Author'] .'<br>';
+				echo $row['Book_name'];
+        echo '<hr>';
+			}
+		}
+	}
+?>
 
 
 <script src="./js/searchResultPage.js"></script>
