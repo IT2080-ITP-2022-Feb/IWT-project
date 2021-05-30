@@ -60,60 +60,7 @@
 </div> -->
 
 
-<section class="users">
-  <div class="user__table">
-      <div class="user__tableHeader">
-      <h3>Buyers</h3>
-          <!-- <div class="">
-              <a class="nav__login" href="./addUser.php?role=buyer">Add new Buyer</a>
-          </div> -->
-      </div>
-      
-      <table id="Buyers">
-          <tr>
-              <th>B_ID</th>
-              <th>F_name</th>
-              <th>M_name</th>
-              <th>L_name</th>
-              <th>B_dob</th>
-              <th>B_email</th>
-              <th>user_type</th>
-              <th>Delete</th>
-          </tr>
 
-          <?php
-              $sql = "SELECT * from Buyer";
-              $result = $conn->query($sql);
-
-              if ($result->num_rows > 0) {
-                  while ($row = $result->fetch_assoc()) {
-                  echo "
-                  <tr>
-                      <td>".$row['B_ID']."</td>
-                      <td>".$row['F_name']."</td>
-                      <td>".$row['M_name']."</td>
-                      <td>".$row['L_name']."</td>
-                      <td>".$row['B_dob']."</td>
-                      <td>".$row['B_email']."</td>
-                      <td>".$row['user_type']."</td>
-                      
-                      <td>
-                          <a href='./src/admin/deleteUser_src.php?id=$row[B_ID]&role=$row[user_type]'>
-                          <input type='submit' value='Delete'></a>
-                      </td>
-                      
-                  </tr>
-                  ";
-                  }
-              }
-              else {
-                  echo "0 results";
-              }
-          ?>
-
-      </table>
-  </div>
-</section>
 
 
 <section class="users">
@@ -230,10 +177,66 @@
 <section class="users">
   <div class="user__table">
       <div class="user__tableHeader">
-      <h3>Categories</h3>
+      <h3>Buyers</h3>
           <!-- <div class="">
-              <a class="nav__login" href="./src/admin/addUser.php?role=buyer">Add new Buyer</a>
+              <a class="nav__login" href="./addUser.php?role=buyer">Add new Buyer</a>
           </div> -->
+      </div>
+      
+      <table id="Buyers">
+          <tr>
+              <th>B_ID</th>
+              <th>F_name</th>
+              <th>M_name</th>
+              <th>L_name</th>
+              <th>B_dob</th>
+              <th>B_email</th>
+              <th>user_type</th>
+              <th>Delete</th>
+          </tr>
+
+          <?php
+              $sql = "SELECT * from Buyer";
+              $result = $conn->query($sql);
+
+              if ($result->num_rows > 0) {
+                  while ($row = $result->fetch_assoc()) {
+                  echo "
+                  <tr>
+                      <td>".$row['B_ID']."</td>
+                      <td>".$row['F_name']."</td>
+                      <td>".$row['M_name']."</td>
+                      <td>".$row['L_name']."</td>
+                      <td>".$row['B_dob']."</td>
+                      <td>".$row['B_email']."</td>
+                      <td>".$row['user_type']."</td>
+                      
+                      <td>
+                          <a href='./src/admin/deleteUser_src.php?id=$row[B_ID]&role=$row[user_type]'>
+                          <input type='submit' value='Delete'></a>
+                      </td>
+                      
+                  </tr>
+                  ";
+                  }
+              }
+              else {
+                  echo "0 results";
+              }
+          ?>
+
+      </table>
+  </div>
+</section>
+
+
+<section class="users">
+  <div class="user__table">
+      <div class="user__tableHeader">
+      <h3>Categories</h3>
+          <div class="">
+              <a class="nav__login" href="./addCategory.php">Add new Category</a>
+          </div>
       </div>
                 <table id="customers">
                     <tr>

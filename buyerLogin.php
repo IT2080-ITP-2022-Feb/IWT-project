@@ -14,7 +14,7 @@
 
 <div class="include">
 		<center><h3>Sign in to your DSK Book Store Buyer Account</h3></center>
-			<form method="POST" action="abc.php">
+			<form method="POST" action="./src/buyer/buyerLogin_src.php">
 				user name<br>
 				<input type="text" id="uName" name="uName" class="insert" placeholder="Enter your user name
 				" required><br><br>
@@ -24,7 +24,7 @@
 				show password &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
 				<br>
 				
-				<center><button type = "submit" onclick="" class="login">Sign in</button></center>
+				<center><button name ="submit" type = "submit" onclick="" class="login">Sign in</button></center>
 			    <a href="#" style="float:right">Forgot your password ?</a><br><br>
 				<br>
 				<a style="float:left; color: #006699;">Don't have an account?</a>&nbsp;&nbsp;
