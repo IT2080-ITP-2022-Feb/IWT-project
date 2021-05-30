@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 29, 2021 at 01:02 PM
+-- Generation Time: May 30, 2021 at 05:01 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -43,11 +43,11 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`A_ID`, `F_name`, `M_name`, `L_name`, `A_dob`, `A_email`, `user_type`, `A_Password`) VALUES
-(1, 'Nadeesha', 'Dilshan', 'Wickramarathna', '1999-10-11', 'Nadeesha@gmail.com', 'admin', 'test'),
-(2, 'Dinushika', 'Sewwandi', 'Dodanthenna', '1999-07-01', 'Dinushika@gmail.com', 'admin', 'test'),
-(3, 'Kavindu', 'Malshan', 'Madutharanga', '1999-09-21', 'Kavindu@gmail.com', 'admin', 'test'),
-(4, 'Sameesha', 'Rashani', 'Kulasekara', '1999-10-21', 'Sameesha@gmail.com', 'admin', 'test'),
-(5, 'Dilki', 'Poornima', 'Welagedara', '1999-12-18', 'Dilki@gmail.com', 'admin', 'test');
+(1, 'Nadeesha', 'Dilshan', 'Wickramarathna', '1999-10-11', 'Nadeesha@gmail.com', 'admin', 'test1234'),
+(2, 'Dinushika', 'Sewwandi', 'Dodanthenna', '1999-07-01', 'Dinushika@gmail.com', 'admin', 'test1234'),
+(3, 'Kavindu', 'Malshan', 'Madutharanga', '1999-09-21', 'Kavindu@gmail.com', 'admin', 'test1234'),
+(4, 'Sameesha', 'Rashani', 'Kulasekara', '1999-10-21', 'Sameesha@gmail.com', 'admin', 'test1234'),
+(5, 'Dilki', 'Poornima', 'Welagedara', '1999-12-18', 'Dilki@gmail.com', 'admin', 'test1234');
 
 -- --------------------------------------------------------
 
@@ -97,11 +97,11 @@ CREATE TABLE `buyer` (
 --
 
 INSERT INTO `buyer` (`B_ID`, `F_name`, `M_name`, `L_name`, `B_dob`, `B_email`, `user_type`, `B_Password`) VALUES
-(1, 'Suneth', 'Sampath', 'Perera', '1993-10-15', 'Suneth@gmail.com', 'buyer', 'test'),
-(2, 'Gimhana', 'Senarathna', 'Silva', '1997-12-01', 'Gimhana@gmail.com', 'buyer', 'test'),
-(3, 'Kavindu', 'Maduranga', 'Eodanthanna', '1995-06-18', 'Kavindu@gmail.com', 'buyer', 'test'),
-(4, 'Sameesha', 'Rashini', 'Rathnayaka', '1993-11-20', 'Sameesha@gmail.com', 'buyer', 'test'),
-(5, 'Tharuka', 'Ekanayaka', 'Perera', '1992-07-12', 'Tharuka@gmail.com', 'buyer', 'test');
+(1, 'Suneth', 'Sampath', 'Perera', '1993-10-15', 'Suneth@gmail.com', 'buyer', 'test1234'),
+(2, 'Gimhana', 'Senarathna', 'Silva', '1997-12-01', 'Gimhana@gmail.com', 'buyer', 'test1234'),
+(3, 'Kavindu', 'Maduranga', 'Eodanthanna', '1995-06-18', 'Kavindu@gmail.com', 'buyer', 'test1234'),
+(4, 'Sameesha', 'Rashini', 'Rathnayaka', '1993-11-20', 'Sameesha@gmail.com', 'buyer', 'test1234'),
+(5, 'Tharuka', 'Ekanayaka', 'Perera', '1992-07-12', 'Tharuka@gmail.com', 'buyer', 'test1234');
 
 -- --------------------------------------------------------
 
@@ -169,11 +169,11 @@ CREATE TABLE `contactus` (
 --
 
 INSERT INTO `contactus` (`conusID`, `name`, `email`, `mobile`, `message`) VALUES
-(1, 'Fname Lname', 'test@gmail.com', '0712345678', 'This is a message'),
-(2, 'Fname Lname', 'test@gmail.com', '0712345678', 'This is a message'),
-(3, 'Fname Lname', 'test@gmail.com', '0712345678', 'This is a message'),
-(4, 'Fname Lname', 'test@gmail.com', '0712345678', 'This is a message'),
-(5, 'Fname Lname', 'test@gmail.com', '0712345678', 'This is a message');
+(1, 'Nadeesha Dilshan', 'suneth123@gmail.com', '0712345678', 'This is a message'),
+(2, 'Dinushika Sewwandi', 'gimhana23@gmail.com', '0712345678', 'This is a message'),
+(3, 'Kavindu Malshan', 'kavindu@gmail.com', '0712345678', 'This is a message'),
+(4, 'Sameesha Rashani', 'sameesha25@gmail.com', '0712345678', 'This is a message'),
+(5, 'Dilki Poornima', 'dilki123@gmail.com', '0712345678', 'This is a message');
 
 -- --------------------------------------------------------
 
@@ -253,11 +253,11 @@ CREATE TABLE `seller` (
 --
 
 INSERT INTO `seller` (`S_ID`, `F_name`, `M_name`, `L_name`, `S_dob`, `S_email`, `user_type`, `S_Password`) VALUES
-(1, 'Malsha', 'Ravihari', 'perera', '1991-10-23', 'Malsha@gmail.com', 'seller', 'test'),
-(2, 'Rashmi', 'Senarathna', 'gamage', '1999-05-06', 'Rashmi@gmail.com', 'seller', 'test'),
-(3, 'Kosala', 'Maduranga', 'withanage', '1998-09-03', 'Kosala@gmail.com', 'seller', 'test'),
-(4, 'Dilsha', 'Lakshani', 'bandara', '1997-02-01', 'Dilsha@gmail.com', 'seller', 'test'),
-(5, 'Amandi', 'Pamudika', 'ekanayaka', '1992-12-01', 'Amandi@gmail.com', 'seller', 'test');
+(1, 'Malsha', 'Ravihari', 'perera', '1991-10-23', 'Malsha@gmail.com', 'seller', 'test1234'),
+(2, 'Rashmi', 'Senarathna', 'gamage', '1999-05-06', 'Rashmi@gmail.com', 'seller', 'test1234'),
+(3, 'Kosala', 'Maduranga', 'withanage', '1998-09-03', 'Kosala@gmail.com', 'seller', 'test1234'),
+(4, 'Dilsha', 'Lakshani', 'bandara', '1997-02-01', 'Dilsha@gmail.com', 'seller', 'test1234'),
+(5, 'Amandi', 'Pamudika', 'ekanayaka', '1992-12-01', 'Amandi@gmail.com', 'seller', 'test1234');
 
 --
 -- Indexes for dumped tables

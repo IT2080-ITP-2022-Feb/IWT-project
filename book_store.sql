@@ -42,7 +42,7 @@ VALUES
 
 
 
-CREATE TABLE (Buyer
+CREATE TABLE Buyer(
 	B_ID INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
 	F_name varchar(25),
 	M_name varchar(25),
@@ -181,9 +181,9 @@ CREATE TABLE ContactUs(
 INSERT INTO ContactUs
 	(name, email, mobile, message)
 VALUES
-	('Fname Lname', 'test@gmail.com', '0712345678', 'This is a message'),
-	('Fname Lname', 'test@gmail.com', '0712345678', 'This is a message'),
-	('Fname Lname', 'test@gmail.com', '0712345678', 'This is a message'),
-	('Fname Lname', 'test@gmail.com', '0712345678', 'This is a message'),
-	('Fname Lname', 'test@gmail.com', '0712345678', 'This is a message');
+	('Nadeesha Dilshan', 'suneth123@gmail.com', '0712345678', 'This is a message'),
+	('Dinushika Sewwandi', 'gimhana23@gmail.com', '0712345678', 'This is a message'),
+	('Kavindu Malshan', 'kavindu@gmail.com', '0712345678', 'This is a message'),
+	('Sameesha Rashani', 'sameesha25@gmail.com', '0712345678', 'This is a message'),
+	('Dilki Poornima', 'dilki123@gmail.com', '0712345678', 'This is a message');
 
