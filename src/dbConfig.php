@@ -4,13 +4,13 @@
  $servername = "localhost";
  $username = "root";
  $password = "";
- $dbName = "feedback";
+ $dbName = "book_store";
 
 // Online
-//$servername = "eu-cdbr-west-01.cleardb.com";
-//$username = 'bfacbda18442ae';
-//$password = "a1602e8c";
-//$dbName = "heroku_dbedc9f31577abf";
+// $servername = "eu-cdbr-west-01.cleardb.com";
+// $username = 'bfacbda18442ae';
+// $password = "a1602e8c";
+// $dbName = "heroku_dbedc9f31577abf";
 
 $conn = mysqli_connect($servername, $username, $password, $dbName);
 

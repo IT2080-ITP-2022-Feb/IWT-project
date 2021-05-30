@@ -1,6 +1,6 @@
 <?php
 
-require('src/dbConfig.php');
+require('./src/dbConfig.php');
 
 ?>
 
