@@ -28,13 +28,13 @@
 		if ($res->num_rows > 0) {
 			while ($row = $res->fetch_assoc()) {
 				echo ''. $row['Author'] .'<br>';
-				echo $row['Book_name'];
+				echo $row['Book_name']. '<br>';
         echo '<hr>';
 			}
 		}
 	}
 ?>
-
+ <a href='./addToCart.php?Book_ID=".$row['Book_ID']."'>Add to Cart</a>
 
 <script src="./js/searchResultPage.js"></script>
 <?php

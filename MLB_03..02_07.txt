@@ -1,6 +1,6 @@
-Project Group ID - MLB_03_07 
+Project Group ID - MLB_03.02_07 
 
-Batch No - 
+Batch No - 03.02
 
 Topic - Online Book Store
 
@@ -8,27 +8,35 @@ Project link -
 
 ---------- Group member details ----------
 
-Member Id - 
-Member name - 
-contact no - 
-email address - 
-Implemented Functions - 
+Member Id - IT20658540
+Member name - N.A.N.D.T.Wickramarathna
+contact no - 0768113682
+email address - it20658540@my.sliit.lk
+Implemented Functions - Home page,
+                        Feedback page,
+                        Searchresult page,
+                        footer,header
 
 ----------------------------------------------------------
 
-Member Id - 
-Member name - 
-contact no - 
-email address - 
-Implemented Functions - 
+Member Id - IT20657864
+Member name - A.D.S.Dodanthenna
+contact no - 0773042010
+email address - it20657864@my.sliit.lk
+Implemented Functions - login page, 
+                        buyerlogin dashboard,
+                        footer,
+                        header
 
 ----------------------------------------------------------
 
-Member Id - 
-Member name - 
-contact no - 
-email address - 
-Implemented Functions - 
+Member Id - IT20657550
+Member name - H.K.M.Madutharanga
+contact no - 0774576056
+email address - it20657550@my.sliit.lk
+Implemented Functions - book page,
+                        footer,
+                        header
 
 ----------------------------------------------------------
 
@@ -36,7 +44,11 @@ Member Id - IT20650520
 Member name - S.R Kulasekara 
 contact no - 070 4590671
 email address -it20650520@my.sliit.lk 
-Implemented Functions - 
+Implemented Functions - sign up page,
+                        contack us page,   
+                        terms&condition page,
+                        footer,
+                        header
 
 ----------------------------------------------------------
 
@@ -44,9 +56,13 @@ Member Id - IT20655716
 Member name - P.G.R D.P Welagedara 
 contact no - 0713425833
 email address - it20655716@my.sliit.lk 
-Implemented Functions - admin dashboard
-                        add to cart function
-                        payment & delivery 
+Implemented Functions - admin dashboard,
+                        admin login,
+                        add to cart function,
+                        payment & delivery,
+                        footer,
+                        header
+                        
 
             
                 
