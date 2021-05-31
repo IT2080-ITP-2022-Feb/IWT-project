@@ -7,9 +7,10 @@ require('src/dbConfig.php');
 <?php
 
 
-$descrip = $_POST["comment"];
+$rating = $_POST["rating"];
+$comment = $_POST["comment"];
 
-$sql = "insert into rate(id,Rate,comment) values ('','3','$descrip')";
+$sql = "insert into rate(id,Rate,comment) values ('','$rating','$comment')";
 
 if (mysqli_query($conn, $sql)){
 

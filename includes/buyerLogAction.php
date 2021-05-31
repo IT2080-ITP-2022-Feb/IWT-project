@@ -1,5 +1,5 @@
 <?php
-    include_once 'dbcon.php'; //including the Data Base handler 
+    include_once '../src/dbConfig.php'; //including the Data Base handler 
 ?>
 
 <?php

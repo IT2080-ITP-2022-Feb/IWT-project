@@ -187,3 +187,18 @@ VALUES
 	('Sameesha Rashani', 'sameesha25@gmail.com', '0712345678', 'This is a message'),
 	('Dilki Poornima', 'dilki123@gmail.com', '0712345678', 'This is a message');
 
+
+
+CREATE TABLE Rate(
+	id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+	Rate INT NOT NULL,
+	comment varchar(300) NOT NULL
+);
+INSERT INTO Rate
+	(id, Rate, comment)
+VALUES
+	('', 1, 'This is a Good Site'),
+	('', 4, 'This is a Good Site'),
+	('', 5, 'This is a Good Site'),
+	('', 2, 'This is a Good Site'),
+	('', 3, 'This is a Good Site');
