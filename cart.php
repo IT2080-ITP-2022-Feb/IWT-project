@@ -63,13 +63,17 @@
 
     $result = $conn->query($sql);
 
+    $totalPrice = 0;
+
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
             echo "<hr><h4>".$row['Book_name']."</h4>";
             echo "<h4>".$row['Author']."</h4>";
             echo "<h5>".$row['quantity']."</h5>";
             echo "<a href='./src/removeCart_src.php?C_ID=". $row['C_ID'] ."'><button>Remove</button></a>";
+            $totalPrice += $row['price'] * $row['quantity'];
       }
+      echo '<hr><h3>Total Price : '. $totalPrice .'</h3>';
     }
     else {
       echo "0 items";
