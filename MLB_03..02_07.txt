@@ -1,8 +1,8 @@
-Project Group ID - 
+Project Group ID - MLB_03_07 
 
 Batch No - 
 
-Topic - 
+Topic - Online Book Store
 
 Project link - 
 
@@ -32,16 +32,21 @@ Implemented Functions -
 
 ----------------------------------------------------------
 
-Member Id - 
-Member name - 
-contact no - 
-email address - 
+Member Id - IT20650520 
+Member name - S.R Kulasekara 
+contact no - 070 4590671
+email address -it20650520@my.sliit.lk 
 Implemented Functions - 
 
 ----------------------------------------------------------
 
-Member Id - 
-Member name - 
-contact no - 
-email address - 
-Implemented Functions - 
+Member Id - IT20655716
+Member name - P.G.R D.P Welagedara 
+contact no - 0713425833
+email address - it20655716@my.sliit.lk 
+Implemented Functions - admin dashboard
+                        add to cart function
+                        payment & delivery 
+
+            
+                
