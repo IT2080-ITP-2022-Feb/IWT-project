@@ -82,7 +82,10 @@
 
 <hr>
 <br>
-<a href="./payment_&_delivery.php"><button>Checkout</button></a>
+<?php
+  echo '<a href="./payment_&_delivery.php?totalPrice='. $totalPrice .'"><button>Checkout</button></a>';
+?>
+
 
 <script src="./js/cart.js"></script>
 

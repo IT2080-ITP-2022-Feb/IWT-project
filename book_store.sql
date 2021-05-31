@@ -149,19 +149,18 @@ CREATE TABLE Payment(
 	amount real,
 	pay_type varchar(20),
 	pymntDescription varchar(300),
-	P_time time,
 	P_date date,
 	constraint payBuyerID FOREIGN KEY (B_ID) REFERENCES Buyer(B_ID)
 );
 
 INSERT INTO Payment
-	(B_ID, Book_ID, amount, pay_type, pymntDescription, P_time, P_date)
+	(B_ID, amount, pay_type, pymntDescription, P_date)
 VALUES
-	(1, 1, '700.00', 'cash on delivery', 'This is a payment Description', '08:30:50' ,'2021-01-01'),
-	(2, 2, '350.00', 'cash on delivery', 'This is a payment Description', '14:30:00' ,'2018-12-15'),
-	(3, 3, '1100.00', 'cash on delivery', 'This is a payment Description', '16:43:40' ,'2016-07-12'),
-	(4, 4, '580.00', 'cash on delivery', 'This is a payment Description', '12:15:00' ,'2015-03-14'),
-	(5, 5, '1000.00', 'cash on delivery', 'This is a payment Description', '09:30:30' ,'2015-01-23');
+	(1, '700.00', 'cash on delivery', 'This is a payment Description' ,'2021-01-01'),
+	(2, '350.00', 'cash on delivery', 'This is a payment Description' ,'2018-12-15'),
+	(3, '1100.00', 'cash on delivery', 'This is a payment Description' ,'2016-07-12'),
+	(4, '580.00', 'cash on delivery', 'This is a payment Description' ,'2015-03-14'),
+	(5, '1000.00', 'cash on delivery', 'This is a payment Description' ,'2015-01-23');
 
 
 
