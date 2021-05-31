@@ -1,0 +1,39 @@
+body {
+    font-family: 'lato';
+    color: #111;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.vertical-align {
+    position: relative;
+    top: 35%;
+    transform: translateY(-50%);
+}
+
+strong {
+    font-weight: 900;
+}
+
+p {
+    line-height: 24px;
+    font-weight: 300px;
+}
+
+#about {
+    background: url("http://www.goodwp.com/images/201103/goodwp.com_16835.jpg")fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    height: 600px;
+}
+
+#about h3 {
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+#about h4 {
+    font-weight: 300;
+}
