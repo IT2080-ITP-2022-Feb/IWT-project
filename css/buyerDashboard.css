@@ -1,0 +1,117 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:focus{
+    outline: none;
+}
+a {text-decoration: none;
+    cursor: pointer;
+}
+
+.mainbody{
+    width: 100%;
+}
+.table1{
+    margin: 5px 2%;
+    width: 96%;
+    text-align: center;
+}
+.td1{
+    width: 60%;
+    height: 600px;
+}
+.td1div1{
+    margin: 1%;
+    background-color: rgb(235, 232, 228);
+    text-align: center;
+}
+.imagepro{
+    width: 100px;
+    border-radius: 100%;
+}
+.td2{
+    width: 40%;
+}
+.table2{
+    width: 100%;
+    text-align: center;
+}
+.tbl2tr2td1{
+    text-align: left;
+    padding-left: 15%;
+}
+.tbl2tr2td3{
+    margin: 0 5%;
+    border: 1px solid black;
+    padding: 1%;
+}
+.button2{
+    border-radius: 8px;
+    width: 60px;
+}
+.td1div2{
+    margin: 1% 1%;
+    border: 1px solid black;
+    text-align: left;
+    padding: 2%;
+}
+.continue{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+}
+/*start radio js area */
+.Un_que{
+    margin: 3%;
+}
+.un_other{
+    display: none;
+}
+#un_textbox{
+    width: 60%;
+    margin: 10px 20%;
+}
+.paymentLogoDiv{
+    display: flex;
+    margin: 2%;
+}
+.PyLogo{
+    width: 30px;
+    margin: 2%;
+}
+.un_other1{
+    display: none;
+    margin: 1% 5%;
+}
+.F_name{
+    margin: 1px 10% 1px 10%;
+    width: 50%;
+    height: 25px;
+    right: 0px;
+    color: #5D4954 ;
+    border-radius: 6px;
+}
+
+.Full_text{
+    margin: 1px 5% 1px 5%;
+    width: 50%;
+    height: 40px;
+    right: 0px;
+    color: #5D4954 ;
+    border-radius: 6px;
+}
+.paypalSubmit{
+    margin: 2% 35%;
+}
+.P_Sub{
+    margin: 2% 35%;
+    width: 100px;
+    border-radius: 8px;
+}
+.un_other2{
+    display: none;
+    margin: 1% 5%;
+}
+/*close radio js area */
