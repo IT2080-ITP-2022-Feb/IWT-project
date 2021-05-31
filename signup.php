@@ -1,49 +1,34 @@
 <?php
 $title = 'Sign Up'; include("header.php");
 
-// $conn=mysqli_connect('localhost','root','','dsk_su');
 if(!$conn)
-{
-
-	echo'please check your database connection';
+ {
+ 	echo'please check your database connection';
 }
 
-if (isset($_POST['btn-Sign up']))
+if(isset($_POST['F_name']) &&  isset($_POST['M_name']) && isset($_POST['L_name']) &&  isset($_POST['B_dob']) && isset($_POST['B_email']) &&  isset($_POST['user_type']) && isset($_POST['B_Password']) && isset($_POST['ProfilePic']) &&  isset($_POST['contact'])){
+  $F_name=$_POST['F_name'];
+  $M_name=$_POST['M_name'];
+  $L_name=$_POST['L_name'];
+  $B_dob=$_POST['B_dob'];
+  $B_email=$_POST['B_email'];
+  $user_type=$_POST['user_type'];
+  $Password=$_POST['B_Password'];
+  $contact=$_POST['ProfilePic'];
+  $contact=$_POST['contact'];
 
-	
-{
-	$Fname=mysqli_real_escape_string($conn,$_POST['Fname']);
-	$Lname=mysqli_real_escape_string($conn,$_POST['Lname']);
-	$Phone=mysqli_real_escape_string($conn,$_POST['Phone']);
-	$Email=mysqli_real_escape_string($conn,$_POST['Email']);
-    $Password=mysqli_real_escape_string($conn,$_POST['Password']);
-	$Cpassword=mysqli_real_escape_string($conn,$_POST['Cpassword']);
-	$Gender=mysqli_real_escape_string($conn,$_POST['Gender']);
+  $sql = "INSERT INTO Buyer
+    (F_name,M_name,L_name,B_dob,B_email,user_type,B_Password,ProfilePic,contact) 
+  VALUES
+    ('$F_name' , '$M_name' , '$L_name' , '$B_dob' , '$B_email','$user_type','$B_Password', '$ProfilePic' , '$contact');";
 
-	
-	
-   
-   if($Password!=$Cpassword)
-   {
-
-   	echo"Password not matched";
-   }
-
-   else
-   {
-   	$Pass=md5($Password);
-   
-  	$sql="insert into game(Fname,Lname,Phone,Email,Password,Cpassword)values ('$Fname','$Lname','$Phone','$Email','$Password','$Cpassword','$Gender')";
-    	 $result=mysqli_query($conn,$sql);
-
-	if ($result) {
-		echo "1 Record added.";
-	} 
-	else {
-		echo "Database query failed.";
-	}
-
- }}
+  if (mysqli_query($conn, $sql)) {
+    header("location: ./index.php");
+  }
+  else {
+  echo "<script>alert ('Something went wrong :-(')</script>";
+  }
+}
 
 
   
@@ -67,35 +52,41 @@ if (isset($_POST['btn-Sign up']))
       <form action="#">
         <div class="user-details">
           <div class="input-box">
-            <span class="details"> First Name</span>
+            
             <input type="text" placeholder="Enter First Name" required>
           </div>
           <div class="input-box">
-            <span class="details">Last Name</span>
+            
+            <input type="text" placeholder="Enter Middel Name" required>
+            </div>
             <input type="text" placeholder="Enter Last Name" required>
           </div>
           <div class="input-box">
-            <span class="details">Phone Number</span>
-            <input type="text" placeholder="Enter Phone Number" required>
+            <!-- <span class="details">Birth of Day</span> -->
+            <input type="text"  placeholder="Enter your Birth of Day" required>
           </div>
           <div class="input-box">
-            <span class="details">Email</span>
             <input type="email"  placeholder="Enter your Email" required>
           </div>
-          <div class="input-box">
-            <span class="details">Password</span>
+          <hr/>
+          <p>
+          <label><b>User type: </b></label>
+          <input type="radio" name="User type" value="Buyer"/>Buyer
+          <input type="radio" name="User type" value="Seller"/>Seller</p>
+          <hr/>
+           <div class="input-box">
             <input type="password" id="Password" name="Password" placeholder="Enter your password" required>
-			<span class="eye">
+		     	<span class="eye">
      		<i class="far fa-eye"id="eye"></i>
 			</span>
           </div>
+
           <div class="input-box">
-            <span class="details">Confirm Password</span>
-            <input type="password" placeholder="Confirm your password" required>
+            <input type="text" placeholder="Enter Phone Number" required>
           </div>
-        </div>
+        
 		<p>
-          <label><b>Gender: </b></label> &nbsp;&nbsp;&nbsp;
+          <label><b>Gender: </b></label>
           <input type="radio" name="gender" value="Male"/>Male
           <input type="radio" name="gender" value="Female"/>Female
 		  <input type="radio" name="gender" value=""/>Prefer not to say</p>
@@ -117,7 +108,7 @@ if (isset($_POST['btn-Sign up']))
         </div>
         
 </form>
-<script src="./signup.js"></script>
+<script src="./js/signup.js"></script>
 </body>
  
 <?php

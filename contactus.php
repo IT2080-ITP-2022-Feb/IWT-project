@@ -25,7 +25,7 @@ if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['mobile']) &&
 
 <body>
 <div class="container">
-  <img src = "images/new/cont.jpg">
+  <img src = "images/new/contact.jpg">
   <hr/>
       <div class="form">
         <div class="contact-info">
