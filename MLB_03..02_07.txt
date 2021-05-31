@@ -15,7 +15,8 @@ email address - it20658540@my.sliit.lk
 Implemented Functions - Home page,
                         Feedback page,
                         Searchresult page,
-                        footer,header
+                        footer,
+                        header
 
 ----------------------------------------------------------
 

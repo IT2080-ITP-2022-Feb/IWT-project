@@ -2,7 +2,7 @@
   $title = 'Home'; include("header.php");
 ?>
 
-<link rel="stylesheet" href="./css/index.css">
+<link rel="stylesheet" href="css/index.css">
 
 
 <div class="slideshow-container">
@@ -39,7 +39,7 @@
 </div>
 
 
-<script src="./js/index.js"></script>
+<script src="js/index.js"></script>
 <?php
 	include "./footer.php";
 ?>
