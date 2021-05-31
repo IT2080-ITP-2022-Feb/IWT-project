@@ -31,19 +31,19 @@
                     mysqli_query($conn, $FASql); //connect to data base
                     
                     
-                    header("Location:../buyerDashbordW.php?Project_Uploaded=Success"); //re-derect location
+                    header("Location:../buyerDashbord.php?Project_Uploaded=Success"); //re-derect location
                 }
                 else{
-                    header("Location:../buyerDashbordW.php?Project_Size=Error"); //re-derect location
+                    header("Location:../buyerDashbord.php?Project_Size=Error"); //re-derect location
                 }
 
             }
             else{
-                header("Location:../buyerDashbordW.php?Project_File=Error"); //re-derect location
+                header("Location:../buyerDashbord.php?Project_File=Error"); //re-derect location
             }
         }
         else{
-            header("Location:../buyerDashbordW.php?Project_Type=Error"); //re-derect location
+            header("Location:../buyerDashbord.php?Project_Type=Error"); //re-derect location
         }
 
     }
