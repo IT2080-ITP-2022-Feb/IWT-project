@@ -2,7 +2,7 @@
 $title = 'Contact Us'; include("header.php");
 try{
 
-  $db = new mysqli("localhost","root","","dsk_contactus");
+ // $db = new mysqli("localhost","root","","dsk_contactus");
 }
 catch (Exception $exc) {
   echo $exc->getTraceAsString();
