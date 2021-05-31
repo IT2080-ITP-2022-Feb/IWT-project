@@ -39,6 +39,7 @@
         <ul>
           <li> <a href="./index.php">Home</a></li>
           <li> <a href="./books.php">Books</a></li>
+          <li> <a href="./buyerDashbordW.php">Buyer Profile</a></li>
           <li> <a href="./Payment_&_Delivery.php">Payment & Delivery page</a></li>
           <li> <a href="./contactus.php">Contact Us</a></li>
           <li> <a href="./about.php">About Us</a></li>
@@ -124,7 +125,7 @@
       <p>Online Support: +94 702 233 565</p>
       <p>Publication Inquiries: +94 703 335 335</p>
       <h4>E-mail:-</h4>
-      <p>info@dskbooks.com</p>
+      <p>info@dskboos.com</p>
       <p>admin@dskbooks.com</p>
     </td>
     

@@ -1,41 +1,57 @@
-<?php
-  $title = 'Seller Login'; include("header.php");
-?>
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Seller Login</title>
+        <link type="text/css" rel="stylesheet" href="./css/sellerLogin.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    </head>
+    
+    <body>
+        <?php
+        $title = 'Seller Login'; include("header.php");
+        ?>
+
+                <!-- Type your Code here -->
+        <h1>Seller Login</h1>
 
 
-<link rel="stylesheet" href="./css/sellerLogin.css">
+        <div align="center"style="width:800px;text-align:center;height:700px;border:1px solid black;">
 
+        <div class="include">
+        <br/><br/><center><h3>Sign in to your DSK Book Store Seller Account</h3></center><br/><br/>
+                    <form method="POST" action="./includes/sellerLogAction.php">
 
-<!-- Type your Code here -->
-<h1>Seller Login</h1>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required><br/><br/>
 
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required><br/><br/><br/><br/>
 
-<div align="center"style="width:800px;text-align:center;height:700px;border:1px solid black;">
+                        <button type="submit" class="btn" name="logSub">LogIn</button>
 
-<div class="include">
-		<center><h3>Sign in to your DSK Book Store Seller Account</h3></center>
-			<form method="POST" action="login.php">
-				Email<br>
-				<input type="text" id="uName" name="uName" class="insert" placeholder="Enter your email address
-				" required><br><br>
-				Password<br>
-				<input type="password" id="showPass" name="showPass" class="insert" placeholder="Password" required pattern="[a-zA-Z0-9]{5,10}"><br><br>
-				<input type="checkbox"  onclick="myfunction()">
-				show password &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
-				<br>
-				
-				<center><button type = "submit" onclick="" class="login">Sign in</button></center>
-			    <a href="#" style="float:right">Forgot your password ?</a><br><br>
-				<br>
-				<a style="float:left; color: #006699;">Don't have an account?</a>&nbsp;&nbsp;
-				
-                <a href=".......">Sign up</a>
-			
-			</form>
-	</div>
-</div>
+                        <input type="checkbox"  onclick="">
+                        show password &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+                        <br>
+                        
+                        <center>
+                            <button type = "submit" name="logSub" class="login">Sign in</button>
+                        </center>
+                    </form>
 
-<script src="./js/sellerLogin.js"></script>
-<?php
-	include("footer.php");
-?>
+                        <a href="#" style="float:right">Forgot your password ?</a><br><br>
+                        <br>
+                        <a style="float:left; color: #006699;">Don't have an account?</a>&nbsp;&nbsp;
+                        
+                        <a href=".......">Sign up</a>
+            </div>
+        </div>
+
+        <script src="./js/sellerLogin.js"></script>
+        <?php
+            include("footer.php");
+        ?>
+    </body>
+</html>

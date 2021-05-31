@@ -1,5 +1,5 @@
 <?php
-    include_once '../src/dbConfig.php'; //including the Data Base handler 
+    include_once 'dbcon.php'; //including the Data Base handler 
 ?>
 
 <?php
@@ -24,13 +24,21 @@
         $count_rows = mysqli_num_rows($count_Result);
 
         while($loop_data = mysqli_fetch_assoc($count_Result)){
+            $id = $UserAdDetails[$count]['B_ID'];
             $name = $UserAdDetails[$count]['F_name'];
             $email = $UserAdDetails[$count]['B_email'];
             $Dpassword = $UserAdDetails[$count]['B_Password'];
+            $user_type = $UserAdDetails[$count]['user_type'];
 
             if($email==$username){
                 if($Dpassword==$password){
-                    header ("Location: ../index.php?login=success");
+
+                    session_start();
+                    $_SESSION["id"] = $id;
+                    $_SESSION["fname"] = $name;
+                    $_SESSION["email"] = $email;
+                    $_SESSION["role"] = $user_type;
+                    header ("Location: ../buyerDashboard.php?login=success");
                 }
                 else{
                     header ("Location: ../buyerLogin.php?error=Incorrect Password");

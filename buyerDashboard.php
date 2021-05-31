@@ -1,14 +1,20 @@
-<?php
-  $title = 'Buyer Dashboard'; include("header.php");
-?>
+<!DOCTYPE html>
 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Buyer Dashbord</title>
+        <link type="text/css" rel="stylesheet" href="css/buyerdash.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    </head>
+    
+    <body>
+        <?php
+            $title = 'Buyer Login'; include("header.php");
+        ?>
 
-<link rel="stylesheet" href="./css/buyerDashboard.css">
-
-
-<!-- Type your Code here -->
-<h1>Buyer Dashboard</h1>
-<div class="mainbody">
+        <div class="mainbody">
             <table class="table1">
                 <tr>
                     <td class="td1">
@@ -309,10 +315,9 @@
                 </tr>
             </table>
         </div>
-
-
-<script src="./js/buyerDashboard.js"></script>
-
-<?php
-	include "./footer.php";
-?>
+        <?php
+            include("footer.php");
+        ?>
+        <script src="js/buyerdash.js"></script>
+    </body>
+</html>

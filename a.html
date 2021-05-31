@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Feedback</title>
+        <link type="text/css" rel="stylesheet" href="../css/assigment.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body style="background-image: url('images/salon1.jpg'); background-repeat: no-repeat;background-size: 100%">
+		<?php
+            $title = 'Feedback'; include("header.php");
+        ?>
+		<center>
+            <table style = "border-collapse:collapse; background-color: #d9d9d9; bodercolor:black;" border = "5px" width = "70%" class="vtable">
+                <tr style="background-color: #b3b3b3">
+                    <th>Email</th>
+                    <th>Rate</th>
+                    <th>Comment</th>
+                    <th></th>
+                </tr>
+
+				<tr>
+                    <td>jana@gmail.com</td>
+                    <td> 
+                        <img src="images/color_star.png" width="20px">
+                        <img src="images/color_star.png" width="20px">
+                        <img src="images/color_star.png" width="20px">
+                        <img src="images/color_star.png" width="20px">
+                        <img src="images/star.png" width="20px"> </td>
+                    <td>good</td>
+                    <td style="text-align: center;">
+                        <button type="submit" name="feedEdit" class="button2">Edit</button>
+                        <button type="submit" name="feedDel" class="button2">Remove</button>
+                    </td>
+                </tr>
+                
+            </table>
+        </center>
+		<?php
+            include "./footer.php";
+        ?>
+    </body>
+</html>

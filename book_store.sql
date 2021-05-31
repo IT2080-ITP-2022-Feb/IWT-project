@@ -50,17 +50,19 @@ CREATE TABLE Buyer(
 	B_dob date,
 	B_email varchar(50) NOT NULL,
 	user_type varchar(10),
-	B_Password varchar(256) NOT NULL
+	B_Password varchar(256) NOT NULL,
+	profilePic varchar(500) DEFAULT NULL,
+  	contact int(10) DEFAULT NULL
 );
 
 INSERT INTO Buyer
-	( F_name, M_name, L_name, B_dob, B_email, user_type, B_password)
+	( F_name, M_name, L_name, B_dob, B_email, user_type, B_password, profilePic, contact)
 VALUES
-	('Suneth','Sampath','Perera','1993-10-15', 'Suneth@gmail.com', 'buyer', 'test1234'),
-	('Gimhana','Senarathna','Silva','1997-12-01', 'Gimhana@gmail.com', 'buyer', 'test1234'),
-	('Kavindu','Maduranga','Eodanthanna','1995-06-18', 'Kavindu@gmail.com', 'buyer', 'test1234'),
-	('Sameesha','Rashini','Rathnayaka','1993-11-20', 'Sameesha@gmail.com', 'buyer', 'test1234'),
-	('Tharuka','Ekanayaka','Perera','1992-07-12', 'Tharuka@gmail.com', 'buyer', 'test1234');
+	('Suneth','Sampath','Perera','1993-10-15', 'Suneth@gmail.com', 'buyer', 'test1234', 'images/pro_image.jpg', 0),
+	('Gimhana','Senarathna','Silva','1997-12-01', 'Gimhana@gmail.com', 'buyer', 'test1234', 'images/pro_image.jpg', 0),
+	('Kavindu','Maduranga','Eodanthanna','1995-06-18', 'Kavindu@gmail.com', 'buyer', 'test1234', 'images/pro_image.jpg', 0),
+	('Sameesha','Rashini','Rathnayaka','1993-11-20', 'Sameesha@gmail.com', 'buyer', 'test1234', 'images/pro_image.jpg', 0),
+	('Tharuka','Ekanayaka','Perera','1992-07-12', 'Tharuka@gmail.com', 'buyer', 'test1234', 'images/pro_image.jpg', 0);
 
 
 CREATE TABLE Category(
@@ -124,26 +126,19 @@ VALUES
 
 
 CREATE TABLE Feedback(
-	F_ID INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
-	B_ID INT,
-	Book_ID INT,
-	comment varchar(25),
-	Email varchar(20),
-	Rate integer,
-	F_time time,
-	F_date date,
-	constraint feedBuyerID_fk FOREIGN KEY (B_ID) REFERENCES Buyer(B_ID),
-	constraint feedBookID_fk FOREIGN KEY (Book_ID) REFERENCES Book(Book_ID)
+	email varchar(25),
+	comment varchar(20),
+	rate integer
 );
 
 INSERT INTO Feedback
-	(B_ID, Book_ID, comment, Email, Rate, F_time, F_date)
+	(email, comment, rate)
 VALUES
-	(1, 1, 'Good','suneth123@gmail.com', 2, '10:30:50','2021-01-07'),
-	(2, 2, 'Great','gimhana23@gmail.com', 3, '14:40:00','2018-12-20'),
-	(3, 3, 'Bad','kavindu@gmail.com', 4, '16:13:40','2016-07-21'),
-	(4, 4, 'excellent','sameesha25@gmail.com', 1, '12:50:00','2015-03-21'),
-	(5, 5, 'Good','dilki123@gmail.com', 5, '09:10:30','2015-01-28');
+	('suneth123@gmail.com', 'this ia a comment', 5),
+	('gimhana23@gmail.com', 'this ia a comment', 5),
+	('kavindu@gmail.com', 'this ia a comment', 5),
+	('sameesha25@gmail.com', 'this ia a comment', 5),
+	('dilki123@gmail.com', 'this ia a comment', 5);
 
 
 
@@ -189,17 +184,3 @@ VALUES
 	('Dilki Poornima', 'dilki123@gmail.com', '0712345678', 'This is a message');
 
 
-
-CREATE TABLE Rate(
-	id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
-	Rate INT NOT NULL,
-	comment varchar(300) NOT NULL
-);
-INSERT INTO Rate
-	(id, Rate, comment)
-VALUES
-	('', 1, 'This is a Good Site'),
-	('', 4, 'This is a Good Site'),
-	('', 5, 'This is a Good Site'),
-	('', 2, 'This is a Good Site'),
-	('', 3, 'This is a Good Site');
