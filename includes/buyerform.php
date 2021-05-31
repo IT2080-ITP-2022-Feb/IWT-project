@@ -58,7 +58,7 @@
         $FASql = "UPDATE buyer SET F_name = '$Prochange' where B_email = '$ProEmail';"; //Update Status colomn of projecttable
         mysqli_query($conn, $FASql); //connect to data base
 
-        header("Location:../buyerDashbordW.php?change=Success"); //re-derect location
+        header("Location:../buyerDashbord.php?change=Success"); //re-derect location
     }
     if(isset($_POST['remove1'])){
 
@@ -68,7 +68,7 @@
         $FASql = "UPDATE buyer SET F_name = '$Prochange' where B_email = '$ProEmail';"; //Update Status colomn of projecttable
         mysqli_query($conn, $FASql); //connect to data base
 
-        header("Location:../buyerDashbordW.php?delete=Success"); //re-derect location
+        header("Location:../buyerDashbord.php?delete=Success"); //re-derect location
     }
 ?>
 <?php
@@ -80,7 +80,7 @@
         $FASql = "UPDATE buyer SET B_dob = '$Prochange' where B_email = '$ProEmail';"; //Update Status colomn of projecttable
         mysqli_query($conn, $FASql); //connect to data base
 
-        header("Location:../buyerDashbordW.php?change=Success"); //re-derect location
+        header("Location:../buyerDashbord.php?change=Success"); //re-derect location
     }
     if(isset($_POST['remove3'])){
 
@@ -90,7 +90,7 @@
         $FASql = "UPDATE buyer SET B_dob = '$Prochange' where B_email = '$ProEmail';"; //Update Status colomn of projecttable
         mysqli_query($conn, $FASql); //connect to data base
 
-        header("Location:../buyerDashbordW.php?delete=Success"); //re-derect location
+        header("Location:../buyerDashbord.php?delete=Success"); //re-derect location
     }
 ?>
 
@@ -103,7 +103,7 @@
         $FASql = "UPDATE buyer SET contact = '$Prochange' where B_email = '$ProEmail';"; //Update Status colomn of projecttable
         mysqli_query($conn, $FASql); //connect to data base
 
-        header("Location:../buyerDashbordW.php?change=Success"); //re-derect location
+        header("Location:../buyerDashbord.php?change=Success"); //re-derect location
     }
     if(isset($_POST['remove5'])){
 
@@ -113,6 +113,6 @@
         $FASql = "UPDATE buyer SET contact = '$Prochange' where B_email = '$ProEmail';"; //Update Status colomn of projecttable
         mysqli_query($conn, $FASql); //connect to data base
 
-        header("Location:../buyerDashbordW.php?delete=Success"); //re-derect location
+        header("Location:../buyerDashbord.php?delete=Success"); //re-derect location
     }
 ?>
