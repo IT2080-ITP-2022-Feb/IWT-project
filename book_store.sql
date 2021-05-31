@@ -146,14 +146,12 @@ VALUES
 CREATE TABLE Payment(
 	P_ID INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
 	B_ID INT,
-	Book_ID INT,
 	amount real,
 	pay_type varchar(20),
 	pymntDescription varchar(300),
 	P_time time,
 	P_date date,
-	constraint payBuyerID FOREIGN KEY (B_ID) REFERENCES Buyer(B_ID),
-	constraint payBookID FOREIGN KEY (Book_ID) REFERENCES Book(Book_ID)
+	constraint payBuyerID FOREIGN KEY (B_ID) REFERENCES Buyer(B_ID)
 );
 
 INSERT INTO Payment

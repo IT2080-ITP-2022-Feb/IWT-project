@@ -1,26 +1,24 @@
 <?php
 $title = 'Contact Us'; include("header.php");
-try{
 
-  $db = new mysqli("localhost","root","","ContactUs");
-}
-catch (Exception $exc) {
-  echo $exc->getTraceAsString();
-}
 if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['mobile']) && isset($_POST['message'])){
   $name=$_POST['name'];
   $email=$_POST['email'];
-  $phone=$_POST['mobile'];
+  $mobile=$_POST['mobile'];
   $message=$_POST['message'];
 
-$is_insert = $db->query("INSERT INTO `ContactUs`( `name`, `email`, `mobile`, `message`)
- VALUES ('$name','$email','$phone','$message')");
-if($is_insert == TRUE){
-  echo "<h2>Thanks , your request submited .</h2>";
-  exit();
-}
-}
+  $sql = "INSERT INTO ContactUs
+    (name, email, mobile, message) 
+  VALUES
+    ('$name', '$email', '$mobile', '$message');";
 
+  if (mysqli_query($conn, $sql)) {
+    header("location: ./index.php");
+  }
+  else {
+  echo "<script>alert ('Something went wrong :-(')</script>";
+  }
+}
   
 ?>
 <link rel="stylesheet" href="./css/contactus.css">
@@ -80,7 +78,7 @@ if($is_insert == TRUE){
               <span>Email</span>
             </div>
             <div class="input-container">
-              <input type="tel" name="phone" class="input" />
+              <input type="tel" name="mobile" class="input" />
               <label for="">Phone</label>
               <span>Phone</span>
             </div>
