@@ -1,4 +1,4 @@
-<?php
+[23:27, 5/31/2021] Dinushika sliit 😘: <?php
   $title = 'About'; include("header.php");
 ?>
 
@@ -12,7 +12,7 @@
 
 <section  align="center" id="about">
         <div class="container text-center vertical-align">
-          <h1 class="text-uppercase"><strong>About</strong> us</h1>
+          <h1 class="text-uppercase"><strong>about</strong> us</h1>
           <hr style="border-color:#d3d3d3">
          <h4><p>DSK is an online book store for used books,that operates from 
    home avid reader who lacks time to spend inside a local book
