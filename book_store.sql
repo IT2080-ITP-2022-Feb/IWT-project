@@ -197,11 +197,11 @@ CREATE TABLE SignUp(
 INSERT INTO SignUp
 	(F_name,M_name,L_name,dob,address,email,user_type,Password,C_Password,contact,gender)
 VALUES
-	('Nadeesha','Sampath','Perera','1993-11-15','Matara','Sunethqwe@gmail.com', 'buyer', 'test1234','test1234', 0,0),
-	('Gimhana','Senarathna','Silva','1998-12-01','Gampaha','Gimhanasad@gmail.com', 'buyer', 'test1234','test1234' , 0,0),
-	('Kavindu','Maduranga','Eodanthanna','1997-07-18','Badulla','Kavinduasd@gmail.com', 'buyer', 'test1234','test1234' , 0,0),
-	('Sameesha','Rashani','Kulasekara','1999-10-21','Matugama','rashani@gmail.com', 'buyer', 'test1234','test1234' , 0,0),
-	('Tharuka','Ekanayaka','Perera','1995-07-12','Kaluthara','Tharukaasd@gmail.com', 'buyer', 'test1234','test1234', 0,0);
+	('Nadeesha','Sampath','Perera','1993-11-15','Matara','Sunethqwe@gmail.com', 'buyer', 'testpass1234','testpass1234', 0,0),
+	('Gimhana','Senarathna','Silva','1998-12-01','Gampaha','Gimhanasad@gmail.com', 'buyer', 'testpass1234','testpass1234' , 0,0),
+	('Kavindu','Maduranga','Eodanthanna','1997-07-18','Badulla','Kavinduasd@gmail.com', 'buyer', 'testpass1234','testpass1234' , 0,0),
+	('Sameesha','Rashani','Kulasekara','1999-10-21','Matugama','rashani@gmail.com', 'buyer', 'testpass1234','testpass1234' , 0,0),
+	('Tharuka','Ekanayaka','Perera','1995-07-12','Kaluthara','Tharukaasd@gmail.com', 'buyer', 'testpass1234','testpass1234', 0,0);
 
 
 
