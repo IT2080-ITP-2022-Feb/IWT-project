@@ -1,24 +1,6 @@
 <?php
 $title = 'Contact Us'; include("header.php");
 
-if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['mobile']) && isset($_POST['message'])){
-  $name=$_POST['name'];
-  $email=$_POST['email'];
-  $mobile=$_POST['mobile'];
-  $message=$_POST['message'];
-
-  $sql = "INSERT INTO ContactUs
-    (name, email, mobile, message) 
-  VALUES
-    ('$name', '$email', '$mobile', '$message');";
-
-  if (mysqli_query($conn, $sql)) {
-    header("location: ./index.php");
-  }
-  else {
-  echo "<script>alert ('Something went wrong :-(')</script>";
-  }
-}
   
 ?>
 <link rel="stylesheet" href="./css/contactus.css">
@@ -94,6 +76,37 @@ if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['mobile']) &&
               <input type="submit"value="Send">
             </div>
           </form>
+ <?php
+
+if (isset($_POST["submit"])) {
+echo "Your Name is \n".$_POST["name"];
+echo "<br>";
+echo "Your Email Address is  \n".$_POST["email"];
+echo "<br>";
+echo "Your Contact number is \n".$_POST["mobile"];
+echo "<br>";
+echo "Your Message is \n".$_POST["message"];
+}
+
+if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['mobile']) && isset($_POST['message'])){
+  $name=$_POST['name'];
+  $email=$_POST['email'];
+  $mobile=$_POST['mobile'];
+  $message=$_POST['message'];
+
+  $sql = "INSERT INTO ContactUs
+    (name, email, mobile, message) 
+  VALUES
+    ('$name', '$email', '$mobile', '$message');";
+
+  if (mysqli_query($conn, $sql)) {
+    // header("location: ./index.php");
+  }
+  else {
+  echo "<script>alert ('Something went wrong :-(')</script>";
+  }
+}
+?>
         </div>
       </div>
 </div>
