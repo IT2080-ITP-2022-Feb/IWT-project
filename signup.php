@@ -1,40 +1,6 @@
 <?php
 $title = 'Sign Up'; include("header.php");
 
-if(!$conn)
- {
- 	echo'please check your database connection';
-}
-
-if(isset($_POST['F_name']) &&  isset($_POST['M_name']) && isset($_POST['L_name']) &&  isset($_POST['dob']) && isset($_POST['address']) && isset($_POST['email']) &&  isset($_POST['user_type']) && isset($_POST['Password']) && isset($_POST['C_Password']) && isset($_POST['contact']) && isset($_POST['gender'])){
-  $F_name=$_POST['F_name'];
-  $M_name=$_POST['M_name'];
-  $L_name=$_POST['L_name'];
-  $dob=$_POST['dob'];
-  $address=$_POST['address'];
-  $email=$_POST['email'];
-  $user_type=$_POST['user_type'];
-  $Password=$_POST['Password'];
-  $C_Password=$_POST['C_Password'];
-  $contact=$_POST['contact'];
-  $gender=$_POST['gender'];
-
-
-  $sql = "INSERT INTO signup
-    (F_name,M_name,L_name,dob,address,email,user_type,Password,C_Password,contact,gender) 
-  VALUES
-    ('$F_name' , '$M_name' , '$L_name' , '$dob' , '$address' , '$email','$user_type','$Password', '$C_Password', '$contact' , '$gender');";
-
-  if (mysqli_query($conn, $sql)) {
-    header("location: ./index.php");
-  }
-  else {
-  echo "<script>alert ('Something went wrong :-(')</script>";
-  }
-}
-
-
-  
 ?>
 
 
@@ -52,7 +18,7 @@ if(isset($_POST['F_name']) &&  isset($_POST['M_name']) && isset($_POST['L_name']
 	<hr/><hr/>
 	<p><i>Lets get you on board</i></p>
     <div class="content">
-      <form method="POST" action="sgn.php">
+      <form method="POST" action="signup.php">
         <div class="user-details">
           <div class="input-box">
             
@@ -65,11 +31,10 @@ if(isset($_POST['F_name']) &&  isset($_POST['M_name']) && isset($_POST['L_name']
             <input type="text" name="L_name" placeholder="Enter Last Name" required>
           </div>
           <div class="input-box">
-            <!-- <span class="details">Birth of Day</span> -->
             <input type="text" name="dob" placeholder="Enter Your Birth Of Day" required>
           </div>
           <div class="input-box">
-            <textarea type="text" name="address" placeholder="Enter Your Email" required></textarea>
+            <textarea type="text" name="address" placeholder="Enter Your Address" required></textarea>
           </div>
           <div class="input-box">
             <input type="email" name="email" placeholder="Enter Your Email" required>
@@ -82,9 +47,9 @@ if(isset($_POST['F_name']) &&  isset($_POST['M_name']) && isset($_POST['L_name']
           <hr>
            <div class="input-box">
             <input type="password" id="Password" name="Password" placeholder="Enter Your Password" >
-		     	<span class="eye">
+		     	<!-- <span class="eye">
      		<i class="far fa-eye"id="eye"></i>
-			</span><br>
+			</span><br> --><br>
       <input type="password" id="Password" name="C_Password" placeholder="Confirm Password" >
 
           </div>
@@ -115,7 +80,58 @@ if(isset($_POST['F_name']) &&  isset($_POST['M_name']) && isset($_POST['L_name']
         </div>
         
 </form>
+<?php
 
+if (isset($_POST["submit"])) {
+echo "Your first name is \n".$_POST["F_name"];
+echo "<br>";
+echo "Your middel name is  \n".$_POST["M_name"];
+echo "<br>";
+echo "Your last name is \n".$_POST["L_name"];
+echo "<br>";
+echo "Your Birthday is \n".$_POST["dob"];
+echo "<br>";
+echo "Your Address : \n".$_POST["address"];
+echo "<br>";
+echo "Your Email : \n".$_POST["email"];
+echo "<br>";
+echo "Your user type is  \n".$_POST["user_type"];
+echo "<br>";
+echo "Password :  \n".$_POST["Password"];
+echo "<br>";
+echo "Confirm Password :  \n".$_POST["C_Password"];
+echo "<br>";
+echo "Contact number :  :\n".$_POST["contact"];
+echo "<br>";
+echo "Gender :\n" .$_POST["gender"];
+}
+
+if(isset($_POST['F_name']) &&  isset($_POST['M_name']) && isset($_POST['L_name']) &&  isset($_POST['dob']) && isset($_POST['address']) && isset($_POST['email']) &&  isset($_POST['user_type']) && isset($_POST['Password']) && isset($_POST['C_Password']) && isset($_POST['contact']) && isset($_POST['gender'])){
+  $F_name=$_POST['F_name'];
+  $M_name=$_POST['M_name'];
+  $L_name=$_POST['L_name'];
+  $dob=$_POST['dob'];
+  $address=$_POST['address'];
+  $email=$_POST['email'];
+  $user_type=$_POST['user_type'];
+  $Password=$_POST['Password'];
+  $C_Password=$_POST['C_Password'];
+  $contact=$_POST['contact'];
+  $gender=$_POST['gender'];
+
+
+  $sql = "INSERT INTO signup
+    (F_name,M_name,L_name,dob,address,email,user_type,Password,C_Password,contact,gender) 
+  VALUES
+    ('$F_name' , '$M_name' , '$L_name' , '$dob' , '$address' , '$email','$user_type','$Password', '$C_Password', '$contact' , '$gender');";
+
+  if (mysqli_query($conn, $sql)) {
+  }
+  else {
+  echo "<script>alert ('Something went wrong :-(')</script>";
+  }
+}
+?>
 <script src="./js/signup.js"></script>
 </body>
  
