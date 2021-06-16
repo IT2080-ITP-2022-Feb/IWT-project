@@ -15,7 +15,7 @@
     vertical-align:bottom;
     font-family: 'Poppins',sans-serif;
   }
-  .container{
+ /* .container{
      max-width: auto;
      width: auto;
      background:rgba(192, 177, 100, 0.575);
@@ -29,13 +29,13 @@
      padding:0px 100px;
      text-align:center; 
      z-index: -99999;
-  }
-  .container .title{
+  } */
+  /* .container .title{
     font-size: 35px;
     font-weight: 800;
     position: relative;
-  }  
-  .container .title::before{
+  }   */
+  /* .container .title::before{
     content: "";
     position: absolute;
     left: 0;
@@ -44,25 +44,25 @@
     width: 30px;
     border-radius: 25px;
   
-  } 
-  .content form .user-details{
+  }  */
+  /* .content form .user-details{
     display: block;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 50px 20 12px 20px;
-  }
-  
+  } */
+/*   
    form.user-details .input-box{
     margin-bottom: 25px;
     width: calc(100% / 2 - 20px);
-  }
-  form .input-box span.details{
+  } */
+  /* form .input-box span.details{
     display: block;
     width:100%;
     font-weight: 500;
     margin-bottom: 15px;
-  }
-  .user-details .input-box input{
+  } */
+  /* .user-details .input-box input{
     height: 4;
     width: 35%;
     outline: none;
@@ -72,20 +72,20 @@
     border: 1px solid #ccc;
     border-bottom-width: 2px;
     transition: all 0.3s ease;
-  }
-    .gender-details .gender-title{
+  } */
+    /* .gender-details .gender-title{
     font-size: 20px;
     font-weight: 500;
-   }
-      
+   } */
+/*       
   .input[type="radio"]{
      display: contents;
-   }
-   .button{
+   } */
+   /* .button{
      height: 50px;
      margin: 35px ;
-  }
-   .button input{
+  } */
+   /* .button input{
      height: 100%;
      width: 100%;
      border-radius: 5px;
@@ -97,14 +97,14 @@
      cursor: pointer;
      transition: all 0.3s ease;
      background: rgba(255,0,0,0.5);
-   }
-   form .button input:hover{
+   } */
+   /* form .button input:hover{
     
     background:rgb(192, 35, 35);
     }
-   
+    */
 
-
+/* 
   .input {
     width: 100%;
     outline: none;
@@ -117,28 +117,28 @@
     letter-spacing: 0.5px;
     border-radius: 5px;
     transition: 0.3s;
-  }
+  } */
   
-  textarea.input {
+  /* textarea.input {
     padding: 0.8rem 1.2rem;
     min-height: 150px;
     border-radius: 5px;
     resize: none;
     overflow-y: auto;
-  }
+  } */
 
-  .input-container.textarea {
+  /* .input-container.textarea {
     max-width: 100;
     top: 1rem;
     transform: translateY(0);
-  }
+  } */
   
-  .input-box span.details{
+  /* .input-box span.details{
     display:block;
     font-weight: 500;
     margin-bottom: 10px; 
-  }
-  .user-details .input-box input{
+  } */
+  /* .user-details .input-box input{
     height: 25px;
     width: 15%;
     outline:none;
@@ -148,22 +148,22 @@
     border: 1px solid rgb(168, 45, 117);
     border-bottom-width: 2px;
     transition: all 0.3s ease;
-  } 
-  .gender-details{
+  }  */
+  /* .gender-details{
     font-size: 20px;
     font-weight: 500;
-   }
-   
+   } */
+/*    
   .radios{
     background-color: rgb(189, 91, 91);
-   }
+   } */
    
-   
+/*    
    .radios input{
     margin-left: 2%;
     margin-right: 2%;
-   }
-  .gender{
+   } */
+  /* .gender{
      display: flex;
      width: 80%;
      margin: 14px 0 ;
@@ -182,16 +182,16 @@
     background: #d9d9d9;
     border: 5px solid transparent;
     transition: all 0.3s ease;
-  }  
+  }   */
 
-  .form input[type="radio"]{
+  /* .form input[type="radio"]{
      display: none;
-   }
-  .button{
+   } */
+  /* .button{
      height: 50px;
      margin: 35px ;
-  }
-  .button input{
+  } */
+  /* .button input{
      height: 100%;
      width: 100%;
      border-radius: 5px;
@@ -203,17 +203,17 @@
      cursor: pointer;
      transition: all 0.3s ease;
      background: rgba(255, 0, 0, 0.651);
-   }
-   .button input:hover{
+   } */
+   /* .button input:hover{
     
     background:rgba(255, 0, 76, 0.219);
     }
-    
-  .icon {
+     */
+  /* .icon {
     width: 28px;
     margin-right: 0.7rem;
-  }
-  
+  } */
+/*   
   .social-media {
     padding: 2rem 0 0 0;
   }
@@ -241,4 +241,4 @@
   
   .social-icons a:hover {
     transform: scale(1.05);
-  }   
+  }     */

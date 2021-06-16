@@ -6,21 +6,20 @@ if(!$conn)
  	echo'please check your database connection';
 }
 
-if(isset($_POST['F_name']) &&  isset($_POST['M_name']) && isset($_POST['L_name']) &&  isset($_POST['B_dob']) && isset($_POST['B_email']) &&  isset($_POST['user_type']) && isset($_POST['B_Password']) && isset($_POST['ProfilePic']) &&  isset($_POST['contact'])){
+if(isset($_POST['F_name']) &&  isset($_POST['M_name']) && isset($_POST['L_name']) &&  isset($_POST['B_dob']) && isset($_POST['B_email']) &&  isset($_POST['user_type']) && isset($_POST['B_Password']) &&  isset($_POST['contact'])){
   $F_name=$_POST['F_name'];
   $M_name=$_POST['M_name'];
   $L_name=$_POST['L_name'];
   $B_dob=$_POST['B_dob'];
   $B_email=$_POST['B_email'];
   $user_type=$_POST['user_type'];
-  $Password=$_POST['B_Password'];
-  $contact=$_POST['ProfilePic'];
+  $B_Password=$_POST['B_Password'];
   $contact=$_POST['contact'];
 
-  $sql = "INSERT INTO Buyer
-    (F_name,M_name,L_name,B_dob,B_email,user_type,B_Password,ProfilePic,contact) 
+  $sql = "INSERT INTO buyer
+    (F_name,M_name,L_name,B_dob,B_email,user_type,B_Password,contact) 
   VALUES
-    ('$F_name' , '$M_name' , '$L_name' , '$B_dob' , '$B_email','$user_type','$B_Password', '$ProfilePic' , '$contact');";
+    ('$F_name' , '$M_name' , '$L_name' , '$B_dob' , '$B_email','$user_type','$B_Password', '$contact');";
 
   if (mysqli_query($conn, $sql)) {
     header("location: ./index.php");
@@ -49,50 +48,44 @@ if(isset($_POST['F_name']) &&  isset($_POST['M_name']) && isset($_POST['L_name']
 	<hr/><hr/>
 	<p><i>Lets get you on board</i></p>
     <div class="content">
-      <form action="#">
+      <form method="POST" action="sgn.php">
         <div class="user-details">
           <div class="input-box">
             
-            <input type="text" placeholder="Enter First Name" required>
+            <input type="text" name="F_name" placeholder="Enter First Name" required>
           </div>
           <div class="input-box">
             
-            <input type="text" placeholder="Enter Middel Name" required>
+            <input type="text" name="M_name" placeholder="Enter Middel Name" required>
             </div>
-            <input type="text" placeholder="Enter Last Name" required>
+            <input type="text" name="L_name" placeholder="Enter Last Name" required>
           </div>
           <div class="input-box">
             <!-- <span class="details">Birth of Day</span> -->
-            <input type="text"  placeholder="Enter your Birth of Day" required>
+            <input type="text" name="B_dob" placeholder="Enter your Birth of Day" required>
           </div>
           <div class="input-box">
-            <input type="email"  placeholder="Enter your Email" required>
+            <input type="email" name="B_email" placeholder="Enter your Email" required>
           </div>
           <hr/>
           <p>
           <label><b>User type: </b></label>
-          <input type="radio" name="User type" value="Buyer"/>Buyer
-          <input type="radio" name="User type" value="Seller"/>Seller</p>
+          <input type="radio" name="User_type" value="Buyer"/>Buyer
+          <input type="radio" name="User_type" value="Seller"/>Seller</p>
           <hr/>
            <div class="input-box">
-            <input type="password" id="Password" name="Password" placeholder="Enter your password" required>
+            <input type="password" id="Password" name="B_Password" placeholder="Enter your password" required pattern="[a-zA-Z0-9]{5,10}>
 		     	<span class="eye">
      		<i class="far fa-eye"id="eye"></i>
 			</span>
           </div>
 
           <div class="input-box">
-            <input type="text" placeholder="Enter Phone Number" required>
+            <input type="text" name="contact" placeholder="Enter Phone Number" required>
           </div>
-        
-		<p>
-          <label><b>Gender: </b></label>
-          <input type="radio" name="gender" value="Male"/>Male
-          <input type="radio" name="gender" value="Female"/>Female
-		  <input type="radio" name="gender" value=""/>Prefer not to say</p>
-			<hr/><hr/>
+      
             <div class="button">
-              <input type="submit"value=Sign Up>
+              <input type="submit" name="submit" value=Sign Up>
             </div>
 			<div class="social-media">
             <p>Connect with us :</p>
@@ -108,6 +101,7 @@ if(isset($_POST['F_name']) &&  isset($_POST['M_name']) && isset($_POST['L_name']
         </div>
         
 </form>
+
 <script src="./js/signup.js"></script>
 </body>
  
