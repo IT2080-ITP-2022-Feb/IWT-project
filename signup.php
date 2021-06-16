@@ -20,7 +20,7 @@ if(isset($_POST['F_name']) &&  isset($_POST['M_name']) && isset($_POST['L_name']
   $gender=$_POST['gender'];
 
 
-  $sql = "INSERT INTO SignUp
+  $sql = "INSERT INTO signup
     (F_name,M_name,L_name,dob,address,email,user_type,Password,C_Password,contact,gender) 
   VALUES
     ('$F_name' , '$M_name' , '$L_name' , '$dob' , '$address' , '$email','$user_type','$Password', '$C_Password', '$contact' , '$gender');";
@@ -81,11 +81,11 @@ if(isset($_POST['F_name']) &&  isset($_POST['M_name']) && isset($_POST['L_name']
           <input type="radio" name="user_type" value="Seller"/>Seller</p>
           <hr>
            <div class="input-box">
-            <input type="password" id="Password" name="Password" placeholder="Enter Your Password" required>
+            <input type="password" id="Password" name="Password" placeholder="Enter Your Password" >
 		     	<span class="eye">
      		<i class="far fa-eye"id="eye"></i>
 			</span><br>
-      <input type="password" id="Password" name="C_Password" placeholder="Confirm Password" required>
+      <input type="password" id="Password" name="C_Password" placeholder="Confirm Password" >
 
           </div>
           <br>
