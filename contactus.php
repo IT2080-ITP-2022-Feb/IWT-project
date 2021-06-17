@@ -21,12 +21,12 @@ if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['mobile']) &&
 }
   
 ?>
-<link rel="stylesheet" href="./css/contactus.css">
-
+<link rel="stylesheet" href="./css/contactus.css">  
 <body>
 <div class="container">
   <img src = "images/new/contact.jpg">
   <hr/>
+  <form name="myform" method="POST" action="">
       <div class="form">
         <div class="contact-info">
           <b><h2 class="title">Send Us A Message</h2></b>

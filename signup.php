@@ -6,11 +6,10 @@ $title = 'Sign Up'; include("header.php");
 
 <link rel="stylesheet" href="./css/signup.css">
 <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-<!-- 
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
-</style> -->
+</style>
 <body>
 <div class="container">
 	<img src = "./images/new/regi.jpg">
@@ -18,7 +17,7 @@ $title = 'Sign Up'; include("header.php");
 	<hr/><hr/>
 	<p><i>Lets get you on board</i></p>
     <div class="content">
-      <form method="POST" action="signup.php">
+      <form method="POST" action="signup.php" autocomplete="on">
         <div class="user-details">
           <div class="input-box">
             
@@ -34,10 +33,10 @@ $title = 'Sign Up'; include("header.php");
             <input type="text" name="dob" placeholder="Enter Your Birth Of Day" required>
           </div>
           <div class="input-box">
-            <textarea type="text" name="address" placeholder="Enter Your Address" required></textarea>
+            <input type="text" name="address" placeholder="Enter Your Address" required>
           </div>
           <div class="input-box">
-            <input type="text" name="email" placeholder="Enter Your Email" required>
+            <input type="email" name="email" placeholder="Enter Your Email" required>
           </div>
           <hr>
           <p>
@@ -46,10 +45,9 @@ $title = 'Sign Up'; include("header.php");
           <input type="radio" name="user_type" value="Seller"/>Seller</p>
           <hr>
            <div class="input-box">
-            <input type="password" id="Password" name="Password" placeholder="Enter Your Password" >
-		     	<!-- <span class="eye">
-     		<i class="far fa-eye"id="eye"></i>
-			</span><br> --><br>
+            <input type="password" id="Password" name="Password" placeholder="Enter Your Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" >
+  	
+      <br>
       <input type="password" id="Password" name="C_Password" placeholder="Confirm Password" >
           </div>
           <div class="input-box">
@@ -60,7 +58,6 @@ $title = 'Sign Up'; include("header.php");
           <input type ="radio" name = "gender" value = "Male">Male
           <input type ="radio" name = "gender" checked="checked" value = "Female">Female
           <hr><br>
-      
             <div class="button">
               <input type="submit" name="submit" value="Sign Up">
             </div>
@@ -76,7 +73,8 @@ $title = 'Sign Up'; include("header.php");
             </div>
           </div>
         </div>
-        
+      <b><a href="./index.php">Home</a></b>  
+      <br><br>
 </form>
 <?php
 
