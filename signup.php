@@ -37,7 +37,7 @@ $title = 'Sign Up'; include("header.php");
             <textarea type="text" name="address" placeholder="Enter Your Address" required></textarea>
           </div>
           <div class="input-box">
-            <input type="email" name="email" placeholder="Enter Your Email" required>
+            <input type="text" name="email" placeholder="Enter Your Email" required>
           </div>
           <hr>
           <p>
@@ -51,20 +51,18 @@ $title = 'Sign Up'; include("header.php");
      		<i class="far fa-eye"id="eye"></i>
 			</span><br> --><br>
       <input type="password" id="Password" name="C_Password" placeholder="Confirm Password" >
-
           </div>
-          <br>
-
           <div class="input-box">
             <input type="text" name="contact" placeholder="Enter Phone Number" required>
           </div><br>
+          <hr>
           <label><b>Gender: </b></label>
           <input type ="radio" name = "gender" value = "Male">Male
           <input type ="radio" name = "gender" checked="checked" value = "Female">Female
-          <br>
+          <hr><br>
       
             <div class="button">
-              <input type="submit" name="submit" value=Sign Up>
+              <input type="submit" name="submit" value="Sign Up">
             </div>
 			<div class="social-media">
             <p>Connect with us :</p>

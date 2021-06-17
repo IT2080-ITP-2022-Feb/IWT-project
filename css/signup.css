@@ -1,4 +1,4 @@
-*{
+*{ 
     margin: 2px;
     padding: 1px;
   }
@@ -15,7 +15,7 @@
     vertical-align:bottom;
     font-family: 'Poppins',sans-serif;
   }
- /* .container{
+ .container{
      max-width: auto;
      width: auto;
      background:rgba(192, 177, 100, 0.575);
@@ -29,13 +29,13 @@
      padding:0px 100px;
      text-align:center; 
      z-index: -99999;
-  } */
-  /* .container .title{
+  } 
+  .container .title{
     font-size: 35px;
     font-weight: 800;
     position: relative;
-  }   */
-  /* .container .title::before{
+  }  
+  .container .title::before{
     content: "";
     position: absolute;
     left: 0;
@@ -44,27 +44,29 @@
     width: 30px;
     border-radius: 25px;
   
-  }  */
-  /* .content form .user-details{
+  } 
+  .content form .user-details{
     display: block;
+    block-size: auto;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 50px 20 12px 20px;
-  } */
-/*   
+  } 
+   
    form.user-details .input-box{
     margin-bottom: 25px;
     width: calc(100% / 2 - 20px);
-  } */
-  /* form .input-box span.details{
+  } 
+  .form{
     display: block;
+    height: 100%;
     width:100%;
     font-weight: 500;
     margin-bottom: 15px;
-  } */
-  /* .user-details .input-box input{
-    height: 4;
-    width: 35%;
+  } 
+  .form .input-box{
+    height: 100%;
+    width: 100%;
     outline: none;
     font-size: 16px;
     border-radius: 5px;
@@ -72,39 +74,40 @@
     border: 1px solid #ccc;
     border-bottom-width: 2px;
     transition: all 0.3s ease;
-  } */
-    /* .gender-details .gender-title{
+  } 
+  .user_type-details .user_type-title{
     font-size: 20px;
     font-weight: 500;
-   } */
-/*       
+   } 
+  .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+   } 
   .input[type="radio"]{
      display: contents;
-   } */
-   /* .button{
+   } 
+    .button{
      height: 50px;
      margin: 35px ;
-  } */
-   /* .button input{
+  } 
+   .button input{
      height: 100%;
-     width: 100%;
-     border-radius: 5px;
-     border: 5%;
+     width: 10%;
+     border-radius: 55px;
+     border: 35%;
      color: #fff;
-     font-size: 18px;
-     font-weight: 500;
+     font-size: 25px;
+     font-weight: 100;
      letter-spacing: 1px;
      cursor: pointer;
      transition: all 0.3s ease;
      background: rgba(255,0,0,0.5);
-   } */
-   /* form .button input:hover{
+   }  
+   form .button input:hover{
     
     background:rgb(192, 35, 35);
     }
-    */
-
-/* 
+  
   .input {
     width: 100%;
     outline: none;
@@ -117,7 +120,7 @@
     letter-spacing: 0.5px;
     border-radius: 5px;
     transition: 0.3s;
-  } */
+  } 
   
   /* textarea.input {
     padding: 0.8rem 1.2rem;
