@@ -1,6 +1,24 @@
 <?php
 $title = 'Contact Us'; include("header.php");
 
+if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['mobile']) && isset($_POST['message'])){
+  $name=$_POST['name'];
+  $email=$_POST['email'];
+  $mobile=$_POST['mobile'];
+  $message=$_POST['message'];
+
+  $sql = "INSERT INTO ContactUs
+    (name, email, mobile, message) 
+  VALUES
+    ('$name', '$email', '$mobile', '$message');";
+
+  if (mysqli_query($conn, $sql)) {
+    header("location: ./index.php");
+  }
+  else {
+  echo "<script>alert ('Something went wrong :-(')</script>";
+  }
+}
   
 ?>
 <link rel="stylesheet" href="./css/contactus.css">
@@ -49,23 +67,24 @@ $title = 'Contact Us'; include("header.php");
 
           <form action="" method="post" autocomplete="on">
             <h3 class="title">Contact us</h3>
+            <div class id="error_message"></div>
             <div class="input-container">
-              <input type="text" name="name" class="input" />
+              <input type="text" name="name" id= "name" class="input" />
               <label for="">Username</label>
               <span>Username</span>
             </div>
             <div class="input-container">
-              <input type="email" name="email" class="input" />
+              <input type="email" name="email" id="email" class="input" />
               <label for="">Email</label>
               <span>Email</span>
             </div>
             <div class="input-container">
-              <input type="tel" name="mobile" class="input" />
+              <input type="tel" name="mobile" id="mobile" class="input" />
               <label for="">Phone</label>
               <span>Phone</span>
             </div>
             <div class="input-container textarea">
-              <textarea name="message" class="input"></textarea>
+              <textarea name="message" id="message" class="input"></textarea>
               <label for="">Message</label>
               <span>Message</span>
             </div>
@@ -76,44 +95,13 @@ $title = 'Contact Us'; include("header.php");
               <input type="submit"value="Send">
             </div>
           </form>
- <?php
-
-if (isset($_POST["submit"])) {
-echo "Your Name is \n".$_POST["name"];
-echo "<br>";
-echo "Your Email Address is  \n".$_POST["email"];
-echo "<br>";
-echo "Your Contact number is \n".$_POST["mobile"];
-echo "<br>";
-echo "Your Message is \n".$_POST["message"];
-}
-
-if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['mobile']) && isset($_POST['message'])){
-  $name=$_POST['name'];
-  $email=$_POST['email'];
-  $mobile=$_POST['mobile'];
-  $message=$_POST['message'];
-
-  $sql = "INSERT INTO ContactUs
-    (name, email, mobile, message) 
-  VALUES
-    ('$name', '$email', '$mobile', '$message');";
-
-  if (mysqli_query($conn, $sql)) {
-    // header("location: ./index.php");
-  }
-  else {
-  echo "<script>alert ('Something went wrong :-(')</script>";
-  }
-}
-?>
         </div>
       </div>
 </div>
 </body>   
 
 
-<script src="./js/ContactUs.js"></script>
+<script src="./js/contactus.js"></script>
 
 <?php
 	include "./footer.php";
