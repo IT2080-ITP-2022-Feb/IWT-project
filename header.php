@@ -74,8 +74,8 @@
 			<?php
 				if (isset($_SESSION["id"])) {
 					if($_SESSION['role'] === 'buyer') {
+						// <li> <a href="./payment_&_delivery.php">Payment & Delivery page</a></li>
 						echo '
-							<li> <a href="./payment_&_delivery.php">Payment & Delivery page</a></li>
 							<li> <a href="./cart.php">Cart</a></li>'
 						;
 					}

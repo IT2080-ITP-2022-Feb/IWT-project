@@ -6,6 +6,7 @@
 
         include_once("dbConfig.php");
         
+        // Query and executon for Delete item from the Cart
         $sql = mysqli_query($conn, "DELETE
                                 FROM Cart
                                 WHERE C_ID='" . $C_ID . "' 
